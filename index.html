@@ -1,1 +1,546 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surajyapatham - Governance for Good</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link:hover {
+            color: #f59e0b;
+        }
+        .sticky-nav {
+            transition: all 0.3s ease;
+        }
+        .sticky {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .animate-fade {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="hero-bg text-white">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">S</div>
+                <h1 class="text-2xl font-bold">Surajyapatham</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#about" class="nav-link font-medium">About Us</a>
+                <a href="#initiatives" class="nav-link font-medium">Initiatives</a>
+                <a href="#resources" class="nav-link font-medium">Resources</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (Sticky) -->
+    <nav id="navbar" class="sticky-nav sticky top-0 z-50 hidden md:flex justify-center bg-white shadow-sm py-3">
+        <div class="container mx-auto px-4 flex flex-wrap justify-center gap-4">
+            <a href="#home" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Home</a>
+            <a href="#about" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">About Us</a>
+            <a href="#initiatives" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Initiatives</a>
+            <a href="#resources" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Resources</a>
+            <a href="#governance" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Governance</a>
+            <a href="#tools" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Tools</a>
+            <a href="#contact" class="nav-link font-medium px-3 py-1 rounded hover:bg-blue-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade">Transforming Governance for the People</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-fade">Empowering citizens through innovative governance solutions and community-driven initiatives</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade">
+                <button class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">Explore Initiatives</button>
+                <button class="bg-transparent border-2 border-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition duration-300">Join Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <div class="h-1 w-16 bg-blue-600 mr-4"></div>
+                <h2 class="text-3xl font-bold">Latest Updates & Announcements</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-alt text-blue-600 mr-2"></i>
+                        <span class="text-sm text-blue-600">June 15, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">New Tribal Housing Model Launched</h3>
+                    <p class="text-gray-600 mb-4">Our Community Housing for Tribal initiative has reached 500 families in Wayanad district.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">Read more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-alt text-blue-600 mr-2"></i>
+                        <span class="text-sm text-blue-600">May 28, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Flood Management System Update</h3>
+                    <p class="text-gray-600 mb-4">Enhanced real-time monitoring capabilities now available across 12 districts.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">Read more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-alt text-blue-600 mr-2"></i>
+                        <span class="text-sm text-blue-600">May 10, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Governance Workshop Series</h3>
+                    <p class="text-gray-600 mb-4">Register for our upcoming training sessions on ethical governance practices.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">Read more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <div class="flex items-center mb-4">
+                        <div class="h-1 w-16 bg-blue-600 mr-4"></div>
+                        <h2 class="text-3xl font-bold">About Surajyapatham</h2>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-700">Mission-Driven Governance for the People</h3>
+                    <p class="text-gray-700 mb-6">Surajyapatham is a pioneering initiative dedicated to transforming public governance through innovative solutions, citizen participation, and ethical practices. We believe in creating systems that are transparent, accountable, and responsive to the needs of all citizens.</p>
+                    <p class="text-gray-700 mb-8">Our approach combines cutting-edge technology with grassroots engagement to tackle complex governance challenges. Through collaborative partnerships with government agencies, civil society organizations, and communities, we strive to build a more inclusive and effective governance ecosystem.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white rounded-lg p-4 shadow-sm flex items-center">
+                            <i class="fas fa-users text-blue-600 text-2xl mr-3"></i>
+                            <div>
+                                <div class="text-2xl font-bold">50+</div>
+                                <div class="text-gray-600">Projects Completed</div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-2xl mr-3"></i>
+                            <div>
+                                <div class="text-2xl font-bold">15</div>
+                                <div class="text-gray-600">Districts Covered</div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm flex items-center">
+                            <i class="fas fa-hands-helping text-blue-600 text-2xl mr-3"></i>
+                            <div>
+                                <div class="text-2xl font-bold">10K+</div>
+                                <div class="text-gray-600">Citizens Impacted</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 flex items-center justify-center text-gray-500">
+                        <div class="text-center">
+                            <i class="fas fa-image text-4xl mb-2"></i>
+                            <p>About Us Visual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Initiatives -->
+    <section id="initiatives" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center mb-4">
+                    <div class="h-1 w-16 bg-blue-600"></div>
+                </div>
+                <h2 class="text-3xl font-bold mb-4">Our Key Initiatives</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Transformative projects addressing critical governance challenges</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-home text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Community Housing for Tribal</h3>
+                        <p class="text-gray-600 mb-4">Sustainable housing solutions for tribal communities with cultural preservation at the core.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-green-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-tree text-green-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Forest Rights Act Implementation</h3>
+                        <p class="text-gray-600 mb-4">Empowering forest-dwelling communities through legal recognition of their rights.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-red-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-tint text-red-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Flood Management Solution</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive flood preparedness and response system using real-time data.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-purple-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-purple-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">e-Health Initiative</h3>
+                        <p class="text-gray-600 mb-4">Digital health solutions improving access to healthcare in remote areas.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-yellow-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-road text-yellow-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pothole-free Kerala</h3>
+                        <p class="text-gray-600 mb-4">Smart infrastructure monitoring and maintenance for safer roads.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-indigo-100 h-40 flex items-center justify-center">
+                        <i class="fas fa-seedling text-indigo-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Krishi Samruddhi</h3>
+                        <p class="text-gray-600 mb-4">Digital platform connecting farmers with markets and resources.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Principles -->
+    <section id="governance" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 flex items-center justify-center text-gray-500">
+                        <div class="text-center">
+                            <i class="fas fa-balance-scale text-4xl mb-2"></i>
+                            <p>Governance Principles Visual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-4">
+                        <div class="h-1 w-16 bg-blue-600 mr-4"></div>
+                        <h2 class="text-3xl font-bold">Principles of Good Governance</h2>
+                    </div>
+                    <p class="text-gray-700 mb-6">Our governance framework is built on foundational principles that ensure transparency, accountability, and citizen participation.</p>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="mr-4 text-blue-600">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Transparency and Openness</h3>
+                                <p class="text-gray-600">Ensuring all government processes and decisions are accessible to citizens and conducted with openness.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="mr-4 text-blue-600">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Participatory Decision-Making</h3>
+                                <p class="text-gray-600">Involving citizens in policy formulation and implementation to ensure solutions meet community needs.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="mr-4 text-blue-600">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Accountability and Responsibility</h3>
+                                <p class="text-gray-600">Establishing clear mechanisms for public officials to be answerable for their actions and decisions.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="mr-4 text-blue-600">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Ethical Governance</h3>
+                                <p class="text-gray-600">Upholding the highest standards of integrity and ethical conduct in all public service activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Resources -->
+    <section id="tools" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center mb-4">
+                    <div class="h-1 w-16 bg-blue-600"></div>
+                </div>
+                <h2 class="text-3xl font-bold mb-4">Tools & Resources</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Empowering public servants and citizens with digital solutions</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Project Management Tools</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fab fa-google text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Google Tracker</h4>
+                                <p class="text-gray-600">Real-time project monitoring and progress tracking system.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fab fa-slack text-purple-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Slack Collaboration</h4>
+                                <p class="text-gray-600">Unified communication platform for cross-departmental coordination.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fas fa-project-diagram text-green-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Project Management System</h4>
+                                <p class="text-gray-600">Comprehensive tool for planning, executing, and monitoring initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Governance Resources</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fas fa-book text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Citizen Centric Governance Module</h4>
+                                <p class="text-gray-600">Training materials for implementing citizen-focused governance practices.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fas fa-file-alt text-yellow-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Model Project Formulation Template</h4>
+                                <p class="text-gray-600">Standardized framework for developing governance projects.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i class="fas fa-chart-line text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Real-Time Governance Tool</h4>
+                                <p class="text-gray-600">Dashboard for monitoring governance performance metrics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <div class="flex items-center mb-4">
+                        <div class="h-1 w-16 bg-blue-600 mr-4"></div>
+                        <h2 class="text-3xl font-bold">Get in Touch</h2>
+                    </div>
+                    <p class="text-gray-700 mb-8">We'd love to hear from you. Reach out with questions, suggestions, or partnership opportunities.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Our Office</h3>
+                                <p class="text-gray-600">Surajyapatham Initiative<br>Kerala State, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Email Us</h3>
+                                <p class="text-gray-600">contact@surajyapatham.in<br>info@surajyapatham.in</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Call Us</h3>
+                                <p class="text-gray-600">+91 98765 43210<br>+91 --------</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                       <!-- <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="name">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your name">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="email">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="subject">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Subject">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2" for="message">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-white text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-3">S</div>
+                        <h3 class="text-xl font-bold">Surajyapatham</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Transforming governance through innovation, participation, and ethical practices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#initiatives" class="text-gray-400 hover:text-white">Initiatives</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white">Resources</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Initiatives</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tribal Housing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Flood Management</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">e-Health</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Forest Rights</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pothole-free Roads</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Surajyapatham Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky navigation
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
