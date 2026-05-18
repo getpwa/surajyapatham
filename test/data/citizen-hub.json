@@ -1,0 +1,161 @@
+{
+  "meta": { "title": "Citizen Empowerment Hub — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "centered",
+      "eyebrow": "Citizen Empowerment Hub",
+      "title": "Know what to expect. Know how to ask. Know how to participate.",
+      "subtitle": "Plain-language guides to your rights, service delivery standards, local participation, and grievance redressal — written so you can act on them today.",
+      "primaryCta":   { "text": "Know your rights",  "link": "#rights" },
+      "secondaryCta": { "text": "Raise a grievance", "link": "#redressal" }
+    },
+    {
+      "type": "tabs",
+      "id": "rights",
+      "eyebrow": "Know Your Rights",
+      "title": "Everyday rights — explained simply",
+      "subtitle": "Pick the area that's relevant to you today. Each tab has the basics, the documents you'll need, and the office to approach.",
+      "items": [
+        {
+          "label": "🏡 Land",
+          "title": "Land & property",
+          "body": [
+            "Every citizen has the right to clear title, accurate records, and transparent transactions in land and property. The Ente Bhoomi portal in Kerala is a recent example of what good land governance looks like in practice."
+          ],
+          "bullets": [
+            "Your name on the land record should match your ID; mismatches can be corrected through the village office.",
+            "Every transaction (sale, mortgage, partition) creates a mutation entry — ask for it in writing.",
+            "Encumbrance certificates show whether the land has been pledged or has outstanding liabilities."
+          ],
+          "cards": [
+            { "icon": "📜", "title": "Get a record of rights", "description": "Visit the village office or use the state's online land records portal (e.g., Ente Bhoomi in Kerala)." },
+            { "icon": "🔍", "title": "Check encumbrances", "description": "Ask for an encumbrance certificate before buying — it lists past loans and liens." },
+            { "icon": "🛠", "title": "Correct an error", "description": "Apply for mutation correction at the village office. Bring supporting documents and acknowledgement receipts." }
+          ]
+        },
+        {
+          "label": "📄 Certificates",
+          "title": "Certificates",
+          "body": [
+            "Income, residence, caste, community, birth, death and disability certificates are foundational documents — and the law specifies clear timelines for issuing them."
+          ],
+          "bullets": [
+            "Every certificate request must be acknowledged in writing — keep your receipt.",
+            "Most certificates have a maximum issue time defined in the state's Citizen Charter — ask for it.",
+            "If a request is denied, you are entitled to a written reason — not silence."
+          ],
+          "cards": [
+            { "icon": "🆔", "title": "Income certificate", "description": "Usually issued within 7–14 days; supports scholarships, fee waivers and welfare access." },
+            { "icon": "🏠", "title": "Residence certificate", "description": "Confirms your address with the state; required for school admissions and many welfare schemes." },
+            { "icon": "👪", "title": "Birth / death certificate", "description": "Apply within 21 days of the event for routine processing; late registration is allowed but takes longer." }
+          ]
+        },
+        {
+          "label": "🏥 Health",
+          "title": "Health services",
+          "body": [
+            "You are entitled to dignified care at public health facilities — including timely OPD, free essential medicines, and emergency stabilisation regardless of ability to pay."
+          ],
+          "bullets": [
+            "Every public hospital should publish its list of free essential medicines.",
+            "Emergency care is a right — no facility can deny stabilisation for inability to pay.",
+            "You have a right to your own medical records (and increasingly, a portable digital record)."
+          ],
+          "cards": [
+            { "icon": "🚑", "title": "Emergency care", "description": "Right to stabilisation in any hospital, public or private, without upfront payment." },
+            { "icon": "💊", "title": "Free essential medicines", "description": "Look for the published list at the OPD counter. Ask for substitutes if a listed medicine is out of stock." },
+            { "icon": "📁", "title": "Your medical records", "description": "Right to a copy of your records. In Kerala, eHealth makes them portable across public facilities." }
+          ]
+        },
+        {
+          "label": "🛡 Welfare",
+          "title": "Welfare & pensions",
+          "body": [
+            "Old-age, widow, disability, and other social-security pensions are statutory entitlements when you meet eligibility criteria — not favours."
+          ],
+          "bullets": [
+            "Application must be acknowledged in writing; processing timelines are published.",
+            "Rejection must come with a reason and an appeal route — not a long silence.",
+            "Disbursement dates and amounts are published; mismatches are appealable."
+          ],
+          "cards": [
+            { "icon": "👵", "title": "Old-age pension", "description": "Apply through your panchayat or municipality; eligibility usually pegged to age and income." },
+            { "icon": "🤝", "title": "Widow / disability pension", "description": "Separate statutory schemes with defined eligibility — ask for the form and acknowledge receipt." },
+            { "icon": "📊", "title": "Track your application", "description": "Most states publish status online or via the panchayat office. Demand updates if there is silence." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "id": "standards",
+      "eyebrow": "Service Delivery Standards",
+      "title": "What does \"good service\" actually mean?",
+      "body": [
+        "Good service is not a slogan. It is a set of testable promises — timelines, behaviour, and remedies — that the state publishes and the citizen can hold it to.",
+        "Look for Citizen Charters at every government office. If one is missing, that itself is a problem worth raising."
+      ],
+      "bullets": [
+        "Promised timeline: how long will this service take?",
+        "Required documents: what exactly do you need to bring?",
+        "Fees and exemptions: what does it cost, and who is exempt?",
+        "Escalation path: if the timeline slips, who do you approach next?"
+      ],
+      "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Citizen receiving a service at a government office"
+    },
+    {
+      "type": "cards",
+      "id": "participate",
+      "background": "muted",
+      "eyebrow": "Participate Locally",
+      "title": "The most powerful office near you is the ward sabha",
+      "subtitle": "Local self-governance is where decisions about your road, school, anganwadi and drainage actually get made. Show up.",
+      "columns": 3,
+      "items": [
+        { "icon": "🗓", "title": "Attend ward sabhas", "description": "Most panchayats hold ward sabhas at least twice a year. Dates are public — your name is on the voter list, so your seat is reserved." },
+        { "icon": "📝", "title": "Submit a proposal", "description": "You can submit written suggestions to the LSGI. A proposal with cost estimates and beneficiary lists travels further than a complaint." },
+        { "icon": "👐", "title": "Volunteer", "description": "Many panchayats welcome volunteers for surveys, audits, school support and disaster drills. Ask the secretary how to register." }
+      ]
+    },
+    {
+      "type": "two-column",
+      "id": "redressal",
+      "eyebrow": "Solve Your Issues",
+      "title": "Step-by-step: raise a grievance and get it closed.",
+      "imagePosition": "left",
+      "body": [
+        "Most grievances are resolved at the lowest level when they are raised cleanly. A short, factual complaint with documents attached and a tracking number on file goes faster than the most strongly worded one.",
+        "The Oppam model — pioneered in Kerala — is one example of how a district office can close 90%+ of grievances within 96 hours when the process is right."
+      ],
+      "bullets": [
+        "Step 1 — Write a one-paragraph factual complaint. Include date, location and what you are asking for.",
+        "Step 2 — Submit it (in person / WhatsApp / written / helpline) and get an acknowledgement / tracking ID.",
+        "Step 3 — Ask for the name of the assigned officer and the expected timeline.",
+        "Step 4 — If timelines slip, escalate to the next level (Tahsildar → Sub-Collector → Collector → State)."
+      ],
+      "cta": { "text": "See the Oppam model", "link": "case-studies.html?slug=oppam" },
+      "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Citizen submitting a complaint at the grievance desk"
+    },
+    {
+      "type": "accordion",
+      "eyebrow": "Easy Explainers",
+      "title": "How does it actually work?",
+      "items": [
+        { "question": "How are certificates issued?", "answer": "You apply (online or at the village office), submit supporting documents, get an acknowledgement, and then either receive the certificate within the published timeline or get a written reason for delay/rejection." },
+        { "question": "How do land records work?", "answer": "Each parcel has a survey number, an owner and a history of mutations. The Revenue Department maintains the ownership ledger; the Survey Department maintains the map. Modern systems like ILIMS link the two." },
+        { "question": "How do I track my application?", "answer": "Most states publish online status using your acknowledgement number. If there is no online tracker, you are entitled to call the office and ask — and to escalate when you don't hear back." },
+        { "question": "What if my grievance is ignored?", "answer": "Escalate. Most departments have a clear escalation chain (junior → senior → district → state). Use it in writing, and reference your earlier tracking ID." }
+      ]
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Need help?",
+      "title": "Send us your question. We'll point you in the right direction.",
+      "subtitle": "Surajyapatham is not a government office — but we can help you find the right one, and write your message in a way that gets a faster reply.",
+      "cta": { "text": "Ask a question", "link": "contact.html" }
+    }
+  ]
+}

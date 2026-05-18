@@ -1,0 +1,99 @@
+{
+  "meta": { "title": "Governance in Action — Case Studies | Surajyapatham" },
+  "eyebrow": "Governance in Action",
+  "title": "Case studies, honestly told",
+  "subtitle": "Real initiatives, real impact — each with a short citizen summary and a detailed officer playbook. Filter by theme, or jump straight to a story.",
+  "items": [
+    {
+      "id": "ente-bhoomi",
+      "slug": "ente-bhoomi",
+      "title": "Ente Bhoomi & ILIMS",
+      "subtitle": "Bringing 30 million land parcels into a unified, citizen-facing digital land information system.",
+      "category": "Digital Governance",
+      "location": "Kerala",
+      "tags": ["land records", "digital governance", "ILIMS"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "kerala-rescue",
+      "slug": "kerala-rescue",
+      "title": "Kerala Rescue",
+      "subtitle": "A real-time, crowd-sourced rescue coordination platform during the 2018 floods.",
+      "category": "Disaster Response",
+      "location": "Kerala",
+      "tags": ["disaster", "floods", "civic-tech"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "covid-jagrata",
+      "slug": "covid-jagrata",
+      "title": "Covid Jagrata",
+      "subtitle": "An integrated digital command system that tracked people, beds, vaccines and supplies through the pandemic.",
+      "category": "Digital Governance",
+      "location": "Kerala",
+      "tags": ["pandemic", "health", "command-and-control"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "udayam",
+      "slug": "udayam",
+      "title": "Udayam — Housing the Homeless",
+      "subtitle": "An equity-driven housing programme that combined dignity, design and decentralised delivery.",
+      "category": "Social Equity",
+      "location": "Kerala",
+      "tags": ["housing", "equity", "inclusion"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "oppam",
+      "slug": "oppam",
+      "title": "Oppam Grievance Model",
+      "subtitle": "A simple WhatsApp-and-officer-led grievance flow that cut resolution times from 21 days to 96 hours.",
+      "category": "Citizen Engagement",
+      "location": "Kerala — District",
+      "tags": ["grievance", "redressal", "citizen engagement"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "forest-rights",
+      "slug": "forest-rights",
+      "title": "Forest Rights Act Implementation",
+      "subtitle": "Recognising community and individual forest rights for tribal communities — at scale, with paperwork that actually closes.",
+      "category": "Social Equity",
+      "location": "Wayanad, Kerala",
+      "tags": ["forest rights", "tribal welfare", "FRA"],
+      "featured": false,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=70"
+      }
+    },
+    {
+      "id": "ehealth",
+      "slug": "ehealth",
+      "title": "eHealth Kerala",
+      "subtitle": "A unified electronic health record platform across primary, secondary and tertiary public health facilities.",
+      "category": "Digital Governance",
+      "location": "Kerala",
+      "tags": ["health", "EHR", "digital health"],
+      "featured": true,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=70"
+      }
+    }
+  ]
+}

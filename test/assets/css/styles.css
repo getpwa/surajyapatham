@@ -1,0 +1,283 @@
+/* =========================================================
+   Surajyapatham — custom styles supplementing Tailwind utilities.
+   Tailwind handles 95% of the design system; this file adds:
+   - skip-to-main link
+   - reading progress bar
+   - scroll-reveal base state + active state
+   - subtle background patterns
+   - lightbox / modal animations
+   - underline-on-hover helpers
+   ========================================================= */
+
+:root {
+  --brand: #1e40af;
+  --saffron: #d97706;
+  --earth: #15803d;
+  --surface: #ffffff;
+  --ink: #0f172a;
+}
+
+html { scroll-behavior: smooth; }
+body { text-rendering: optimizeLegibility; }
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #1e40af;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Reading progress bar ---------- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #1e40af, #d97706);
+  z-index: 60;
+  transition: width 60ms linear;
+}
+
+/* ---------- Scroll reveal ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+  will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-reveal-delay="100"].is-visible { transition-delay: 100ms; }
+[data-reveal-delay="200"].is-visible { transition-delay: 200ms; }
+[data-reveal-delay="300"].is-visible { transition-delay: 300ms; }
+[data-reveal-delay="400"].is-visible { transition-delay: 400ms; }
+[data-reveal-delay="500"].is-visible { transition-delay: 500ms; }
+
+/* ---------- Hero gradient background ---------- */
+.hero-gradient {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(30, 64, 175, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(217, 119, 6, 0.10), transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+.dark .hero-gradient {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(59, 130, 246, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(251, 146, 60, 0.12), transparent 60%),
+    linear-gradient(180deg, #020617 0%, #0f172a 100%);
+}
+
+/* ---------- Subtle dotted pattern overlay ---------- */
+.bg-dots {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* ---------- Underline-on-hover link ---------- */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: currentColor;
+  transition: width 250ms ease-out;
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  width: 100%;
+}
+
+/* ---------- Card hover lift ---------- */
+.card-lift {
+  transition: transform 250ms ease-out, box-shadow 250ms ease-out;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -12px rgba(15, 23, 42, 0.18);
+}
+
+/* ---------- Pillar gradient borders ---------- */
+.pillar-card {
+  position: relative;
+  isolation: isolate;
+}
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.3), rgba(217, 119, 6, 0.25));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  position: relative;
+  padding-left: 2.25rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(30, 64, 175, 0.4), rgba(217, 119, 6, 0.4));
+  border-radius: 9999px;
+}
+.timeline-item { position: relative; padding-bottom: 2.5rem; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.875rem;
+  top: 0.5rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  background: #1e40af;
+  border: 3px solid #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.18);
+}
+.dark .timeline-item::before { border-color: #0f172a; }
+
+/* ---------- Lightbox / modal ---------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.78);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  animation: modalFadeIn 200ms ease-out forwards;
+}
+.modal-panel {
+  background: #fff;
+  color: #0f172a;
+  border-radius: 1rem;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.5);
+  transform: scale(0.97);
+  animation: modalScaleIn 200ms ease-out forwards;
+}
+.dark .modal-panel { background: #0f172a; color: #f1f5f9; }
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  border: 0;
+  z-index: 2;
+}
+.modal-close:hover { background: rgba(0, 0, 0, 0.12); }
+.dark .modal-close { background: rgba(255, 255, 255, 0.08); }
+.dark .modal-close:hover { background: rgba(255, 255, 255, 0.16); }
+@keyframes modalFadeIn { to { opacity: 1; } }
+@keyframes modalScaleIn { to { transform: scale(1); } }
+
+/* ---------- Lightbox image ---------- */
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+/* ---------- Search dropdown ---------- */
+.search-results {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 16px 40px -12px rgba(15, 23, 42, 0.2);
+  max-height: 24rem;
+  overflow-y: auto;
+  z-index: 80;
+}
+.dark .search-results { background: #0f172a; }
+.search-results .hit-title mark {
+  background: #fef08a;
+  color: inherit;
+  border-radius: 0.125rem;
+  padding: 0 0.125rem;
+}
+
+/* ---------- Tabs ---------- */
+.tab-btn[aria-selected="true"] {
+  background: #1e40af;
+  color: #fff;
+}
+.dark .tab-btn[aria-selected="true"] {
+  background: #3b82f6;
+}
+
+/* ---------- Accordion ---------- */
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+.accordion[open] .accordion-panel { max-height: 1000px; }
+
+/* ---------- Counter ---------- */
+.counter { font-variant-numeric: tabular-nums; }
+
+/* ---------- Mobile nav transition ---------- */
+.mobile-nav {
+  transform: translateX(100%);
+  transition: transform 250ms ease-out;
+}
+.mobile-nav.is-open { transform: translateX(0); }
+
+/* ---------- Print ---------- */
+@media print {
+  #navbar-mount, #footer-mount, .reading-progress, .skip-link { display: none !important; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  [data-reveal] { opacity: 1; transform: none; }
+}

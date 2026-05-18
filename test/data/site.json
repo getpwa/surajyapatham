@@ -1,0 +1,59 @@
+{
+  "brand": {
+    "name": "Surajyapatham",
+    "tagline": "Citizen-Centric Governance",
+    "statement": "A platform to sensitize and inspire citizens, public servants, and governance innovators — bridging the demand and supply sides of good governance."
+  },
+  "nav": [
+    { "label": "Home",          "href": "index.html" },
+    { "label": "About",         "href": "about.html" },
+    { "label": "Foundations",   "href": "governance.html" },
+    { "label": "Case Studies",  "href": "case-studies.html" },
+    { "label": "Citizen Hub",   "href": "citizen-hub.html" },
+    { "label": "Tools",         "href": "tools.html" },
+    { "label": "Knowledge",     "href": "knowledge.html" },
+    { "label": "Learning",      "href": "learning.html" },
+    { "label": "Contact",       "href": "contact.html" }
+  ],
+  "footer": {
+    "legal": "Surajyapatham — A platform for citizen-centric governance.",
+    "columns": [
+      {
+        "title": "Explore",
+        "links": [
+          { "label": "About Surajyapatham", "href": "about.html" },
+          { "label": "Foundations of Good Governance", "href": "governance.html" },
+          { "label": "Dilemmas of a Public Servant", "href": "dilemmas.html" },
+          { "label": "Governance in Action", "href": "case-studies.html" }
+        ]
+      },
+      {
+        "title": "For Citizens",
+        "links": [
+          { "label": "Know Your Rights", "href": "citizen-hub.html#rights" },
+          { "label": "Service Delivery Standards", "href": "citizen-hub.html#standards" },
+          { "label": "Participate Locally", "href": "citizen-hub.html#participate" },
+          { "label": "Raise a Grievance", "href": "citizen-hub.html#redressal" }
+        ]
+      },
+      {
+        "title": "For Officers",
+        "links": [
+          { "label": "Tools & Templates", "href": "tools.html" },
+          { "label": "Knowledge Centre", "href": "knowledge.html" },
+          { "label": "Learning Hub", "href": "learning.html" },
+          { "label": "Request a Toolkit", "href": "contact.html" }
+        ]
+      }
+    ],
+    "social": [
+      { "label": "Email", "icon": "✉", "link": "mailto:hello@surajyapatham.in" }
+    ],
+    "bottomLinks": [
+      { "label": "Home",         "href": "index.html" },
+      { "label": "About",        "href": "about.html" },
+      { "label": "Case Studies", "href": "case-studies.html" },
+      { "label": "Contact",      "href": "contact.html" }
+    ]
+  }
+}

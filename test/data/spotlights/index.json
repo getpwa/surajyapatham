@@ -1,0 +1,64 @@
+{
+  "meta": { "title": "Spotlights — Surajyapatham" },
+  "eyebrow": "Spotlight Stories",
+  "title": "Short, simple, relatable stories that inspire confidence.",
+  "subtitle": "From an everyday citizen who reshaped her ward, to officers who set the bar for ethical service.",
+  "items": [
+    {
+      "id": "citizen-who-made-a-difference",
+      "slug": "citizen-who-made-a-difference",
+      "label": "Citizen Story",
+      "tone": "citizen",
+      "title": "The citizen who made a difference",
+      "description": "How one ward-sabha attendee turned a forgotten road project into a model of participatory planning — and a 90-day delivery.",
+      "images": { "thumbnail": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=900&q=70" },
+      "cta": { "text": "Read the story", "link": "knowledge.html" },
+      "link": "knowledge.html"
+    },
+    {
+      "id": "innovation-that-changed-lives",
+      "slug": "innovation-that-changed-lives",
+      "label": "Innovation",
+      "tone": "innovation",
+      "title": "An idea that quietly changed lives",
+      "description": "How a simple WhatsApp-based escalation protocol cut grievance resolution time at a district office from 21 days to 96 hours.",
+      "images": { "thumbnail": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70" },
+      "cta": { "text": "See the model", "link": "case-studies.html?slug=oppam" },
+      "link": "case-studies.html?slug=oppam"
+    },
+    {
+      "id": "sr-sankaran-ias",
+      "slug": "sr-sankaran-ias",
+      "label": "Public Servant",
+      "tone": "public-servant",
+      "title": "S. R. Sankaran — a life of justice",
+      "description": "An exemplary IAS officer who set the standard for integrity, compassion and dedication to the most marginalised. Featured in The Better India.",
+      "attribution": "Featured in The Better India",
+      "images": { "thumbnail": "https://images.unsplash.com/photo-1531538512164-e6c51ea63d20?auto=format&fit=crop&w=900&q=70" },
+      "cta": { "text": "Read the profile", "link": "https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/" },
+      "link": "https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/"
+    },
+    {
+      "id": "fisherfolk-as-first-responders",
+      "slug": "fisherfolk-as-first-responders",
+      "label": "Community in Action",
+      "tone": "citizen",
+      "title": "Fisherfolk as first responders",
+      "description": "How Kerala's traditional fishing community drove its boats inland in 2018 and rescued thousands — quietly redefining who counts as an emergency professional.",
+      "images": { "thumbnail": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=70" },
+      "cta": { "text": "Read the story", "link": "case-studies.html?slug=kerala-rescue" },
+      "link": "case-studies.html?slug=kerala-rescue"
+    },
+    {
+      "id": "reverse-quarantine",
+      "slug": "reverse-quarantine",
+      "label": "Public Health",
+      "tone": "innovation",
+      "title": "Reverse Quarantine — shielding instead of isolating",
+      "description": "A small idea with a large outcome: instead of isolating the infected, the system proactively shielded the elderly and the comorbid. It saved lives.",
+      "images": { "thumbnail": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=900&q=70" },
+      "cta": { "text": "Read the model", "link": "case-studies.html?slug=covid-jagrata" },
+      "link": "case-studies.html?slug=covid-jagrata"
+    }
+  ]
+}

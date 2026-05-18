@@ -1,0 +1,69 @@
+{
+  "meta": { "title": "Dilemmas of a Public Servant — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "centered",
+      "eyebrow": "Reflective, honest, human-centric",
+      "title": "The dilemmas of a public servant.",
+      "subtitle": "Public service is rarely a clean choice between right and wrong. More often, it is a quiet negotiation between right and easy, empathy and rule, present pressure and lasting principle.",
+      "primaryCta": { "text": "Read the dilemmas", "link": "#dilemmas" }
+    },
+    {
+      "type": "pull-quote",
+      "quote": "An officer who has never lost sleep over a decision has not yet served at the edge of the public interest.",
+      "attribution": "A senior administrator"
+    },
+    {
+      "type": "cards",
+      "id": "dilemmas",
+      "columns": 2,
+      "eyebrow": "Five recurring dilemmas",
+      "title": "Honest stories from inside the system",
+      "subtitle": "These are not problems to be solved once. They are tensions to be managed every day — and the choices accumulate into a career.",
+      "items": [
+        {
+          "icon": "⚖",
+          "title": "Doing what is right vs. what is easy",
+          "description": "The right answer often requires friction — with a senior, a contractor, a local strongman. The easy answer is a signature. Knowing the difference is craft. Choosing the right one — every time — is character."
+        },
+        {
+          "icon": "💛",
+          "title": "Balancing empathy with rules",
+          "description": "A widow walks in five days past the deadline. The rule says no. The reason for the rule says yes. Public service is the discipline of finding the third answer — that honours both the rule and the reason it exists."
+        },
+        {
+          "icon": "🌀",
+          "title": "Handling pressure from many sides",
+          "description": "Political, departmental, media, public, personal. Each one is legitimate from its own vantage. Holding the centre — the citizen's interest — through all of them is the daily test."
+        },
+        {
+          "icon": "🚨",
+          "title": "Serving people during crises",
+          "description": "Floods, pandemics, riots, accidents. The job changes shape. Manuals run out. Systems strain. The officers who do this well are the ones who built the relationships before the crisis arrived."
+        },
+        {
+          "icon": "🌱",
+          "title": "Staying motivated in a demanding system",
+          "description": "Transfers, frustrating peers, slow change, occasional cynicism. Motivation is not a feeling — it is a practice. Mentors, peer circles, and small wins keep the long fire going."
+        }
+      ]
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "A note for citizens",
+      "title": "Why these dilemmas matter to you, too.",
+      "body": [
+        "These are not the troubles of officers alone. They are the texture of the system that touches your land, your school, your hospital, your pension.",
+        "When citizens understand the dilemmas, two things happen: the easy answers get harder, and the right ones get a little more support. That is how culture changes — quietly, on both sides."
+      ]
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Share your dilemma",
+      "title": "Have a story to tell?",
+      "subtitle": "We collect, anonymise, and share reflective accounts from serving and retired officers — to teach, to honour, and to keep the conversation alive.",
+      "cta": { "text": "Share your story", "link": "contact.html" }
+    }
+  ]
+}

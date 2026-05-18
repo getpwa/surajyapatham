@@ -1,0 +1,104 @@
+{
+  "id": "kerala-rescue",
+  "slug": "kerala-rescue",
+  "title": "Kerala Rescue",
+  "subtitle": "How a state under water turned every smartphone into a coordination node — and rescued lakhs in 14 days.",
+  "category": "Disaster Response",
+  "location": "Kerala",
+  "tags": ["disaster response", "civic-tech", "floods", "crowdsourcing"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1546554137-f86b9593a222?auto=format&fit=crop&w=1200&q=70", "alt": "Volunteers helping flood victims", "caption": "Fisherfolk turned rescue crews — community as first responder." },
+      { "src": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=70", "alt": "Rescue coordination centre", "caption": "The state command centre during peak operations." },
+      { "src": "https://images.unsplash.com/photo-1591622415961-c2e9eea7a1c0?auto=format&fit=crop&w=1200&q=70", "alt": "Relief camp", "caption": "Over 14 lakh people housed in relief camps." },
+      { "src": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=70", "alt": "Volunteers loading supplies", "caption": "Crowd-sourced logistics, matched to camp needs in near-real-time." }
+    ]
+  },
+  "stats": [
+    { "value": "14L+", "label": "People rescued or sheltered" },
+    { "value": "5,645", "label": "Relief camps coordinated" },
+    { "value": "72 hrs", "label": "From idea to live platform" },
+    { "value": "100K+", "label": "Volunteer hours logged" }
+  ],
+  "citizen": {
+    "summary": "In the August 2018 floods — the worst Kerala had seen in a century — a small civic-tech team and the state's disaster authority built a single platform in 72 hours that let trapped citizens broadcast their location, volunteers sign up, and rescue teams coordinate. It saved lives that would not have been saved otherwise.",
+    "story": [
+      "When the rain didn't stop and the dams had to be opened, ordinary phones became the only reliable signal. People sent photos of stranded families, fisherfolk drove their boats inland, and pharmacies started ferrying insulin in jeeps.",
+      "Kerala Rescue gave that chaos a shape. It collected SOS requests, plotted them on a map for rescue teams, listed verified relief camps, and let volunteers and donors give what was actually needed — not just what felt useful."
+    ],
+    "changes": [
+      "Trapped citizens could be reached by the nearest available rescue team, not just the formal route.",
+      "Relief camps stopped getting twelve truckloads of rice and zero truckloads of sanitary supplies.",
+      "Families separated in the floods reconnected through a simple missing-persons board.",
+      "Months after the floods, the rebuild was tracked transparently through the same portal."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "Kerala Rescue is a story of how a state's emergency response leaned on the civic-tech community — and how that partnership produced a platform that, in retrospect, was the single most important coordination tool of the 2018 floods.",
+      "Built in 72 hours by volunteer engineers in partnership with the Kerala State Disaster Management Authority (KSDMA), the platform handled SOS requests, relief-camp inventories, missing persons, donations and volunteer matching, all in one place.",
+      "The deeper lesson is institutional: response speed comes from pre-existing relationships, open APIs, and the political willingness to let civilians inside the command tent — not from procurement after the rain starts."
+    ],
+    "challenges": [
+      { "title": "Speed vs. accuracy", "description": "Every minute of design discussion was a minute people stayed stranded. The team had to ship MVP features and accept noisy data — then validate continuously." },
+      { "title": "Source of truth conflicts", "description": "Camp inventories, SOS lists, and missing-persons records came from many sources. Deduplication, last-write-wins rules, and a single moderator pool were essential." },
+      { "title": "Volunteer trust and safety", "description": "Untrained volunteers showing up at rescue sites could endanger themselves. Verification, briefing, and matching by skill type were built in." },
+      { "title": "After the headlines fade", "description": "Floodwaters recede. Rebuilding takes years. Keeping the same portal alive for transparent rebuilding required institutional commitment, not just hackathon energy." }
+    ],
+    "actions": [
+      "KSDMA gave the volunteer engineering team a same-day mandate and direct access to district-level officials.",
+      "MVP was shipped in 72 hours, with iterative releases every 6–8 hours during peak operations.",
+      "A 24x7 moderation room manned by IAS/IPS officers and volunteer leads validated SOS requests and routed them.",
+      "Relief camp inventories were updated by camp commandants via SMS-friendly forms — bandwidth was scarce.",
+      "After the response phase, the platform pivoted to Rebuild Kerala dashboards — same database, new lens.",
+      "Source code and learnings were open-sourced to enable other states and disasters to adopt the model."
+    ],
+    "technology": [
+      "Vanilla JS + Bootstrap front-end (chosen for low-bandwidth tolerance)",
+      "Node.js + PostgreSQL backend, autoscaled on a public cloud provider",
+      "Mapbox + OSM for camp and SOS plotting; offline tile caches for command centres",
+      "Twilio + local telecom partners for SMS-based camp inventory updates",
+      "GitHub-based volunteer engineering with a rotating release manager",
+      "Open APIs for media, NGOs and inter-state agencies to consume"
+    ],
+    "outcomes": [
+      "14+ lakh citizens evacuated to or sheltered in 5,645 relief camps coordinated through the platform.",
+      "Average SOS dispatch time fell from \"unmeasured\" to under 20 minutes during peak operations.",
+      "Relief logistics matching reduced spoilage and oversupply of common items by an estimated 40%.",
+      "The platform was reused — with the same core engine — for the 2019 Kerala floods and the early Covid response.",
+      "The civic-tech + KSDMA model became a template adopted by other Indian states and South Asian disaster authorities."
+    ],
+    "processFlow": [
+      { "title": "1. Activation", "description": "KSDMA triggers the platform; volunteer engineering pod is notified via standing roster." },
+      { "title": "2. Public intake", "description": "Citizens, NGOs and officers submit SOS, camp inventories, missing persons and offers of help." },
+      { "title": "3. Moderation", "description": "Central room validates, deduplicates, routes and prioritises every record." },
+      { "title": "4. Dispatch", "description": "Rescue teams (Navy, NDRF, fisherfolk, local police) pulled from the geographically nearest available roster." },
+      { "title": "5. Camp operations", "description": "Camps update inventories; logistics auto-matched to gaps; donors directed to specific needs." },
+      { "title": "6. Rebuild phase", "description": "Same database powers reconstruction dashboards, beneficiary tracking and rebuild progress." }
+    ],
+    "replicationToolkit": [
+      "Volunteer engineering pod constitution (with NDA + safety briefing)",
+      "Standing MoU template between disaster authority and civic-tech group",
+      "Source code (open licensed) with deployment runbook",
+      "Moderation desk SOP and roster template",
+      "Camp commandant SMS form and reporting cadence",
+      "Post-response data retention and transparency policy"
+    ]
+  },
+  "timeline": [
+    { "date": "Aug 8, 2018", "title": "Heavy rain begins", "description": "Initial advisories issued; dam levels start rising across the state." },
+    { "date": "Aug 14, 2018", "title": "Crisis declared", "description": "KSDMA activates emergency response; volunteer engineering pod called in." },
+    { "date": "Aug 15–17, 2018", "title": "Platform built and shipped", "description": "Kerala Rescue v0 goes live; first SOS rescues coordinated within 24 hours." },
+    { "date": "Aug 18–25, 2018", "title": "Peak operations", "description": "Over 14 lakh evacuated to camps; rescue, camp and logistics modules all in use." },
+    { "date": "Sep 2018 →", "title": "Pivot to rebuild", "description": "Platform repurposed for Rebuild Kerala dashboards, beneficiary tracking and donor transparency." },
+    { "date": "2019 / 2020", "title": "Reactivations", "description": "Reused for 2019 floods and the early Covid-19 response in Kerala." }
+  ],
+  "downloads": [
+    { "title": "After-action report", "type": "PDF · 64 pages", "icon": "📑", "link": "contact.html" },
+    { "title": "Volunteer engineering pod template", "type": "DOCX · template", "icon": "👥", "link": "contact.html" },
+    { "title": "Open-source code", "type": "GitHub · repository", "icon": "💻", "link": "contact.html" },
+    { "title": "Moderation SOP", "type": "PDF · 18 pages", "icon": "📋", "link": "contact.html" }
+  ]
+}

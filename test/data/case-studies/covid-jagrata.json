@@ -1,0 +1,103 @@
+{
+  "id": "covid-jagrata",
+  "slug": "covid-jagrata",
+  "title": "Covid Jagrata",
+  "subtitle": "An integrated digital command system that tracked people, beds, vaccines and supplies through the pandemic — and turned a public-health crisis into a public-data discipline.",
+  "category": "Digital Governance",
+  "location": "Kerala",
+  "tags": ["public health", "pandemic", "command and control", "data governance"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=1200&q=70", "alt": "Healthcare worker at testing centre", "caption": "Testing at scale, registered in real time." },
+      { "src": "https://images.unsplash.com/photo-1605288605040-c8c1ab1ac2b1?auto=format&fit=crop&w=1200&q=70", "alt": "Vaccination drive", "caption": "Vaccine inventory tied to walk-in capacity." },
+      { "src": "https://images.unsplash.com/photo-1583912267550-d97e6a734f2b?auto=format&fit=crop&w=1200&q=70", "alt": "Officer monitoring dashboard", "caption": "District control rooms watching the same numbers as the state." },
+      { "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=70", "alt": "Hospital ward", "caption": "Bed availability surfaced live to ambulances and patients." }
+    ]
+  },
+  "stats": [
+    { "value": "80M+", "label": "People tracked through the system" },
+    { "value": "1,200+", "label": "Hospitals connected (live beds)" },
+    { "value": "<48 hrs", "label": "Median quarantine notification" },
+    { "value": "99.4%", "label": "Vaccine slot adherence" }
+  ],
+  "citizen": {
+    "summary": "During Covid, knowing whether your block had cases, whether a bed was available, when your vaccine was due, and whether your quarantine status had been registered was the difference between calm and panic. Covid Jagrata made all of that visible — to citizens, officers, and the state — at the same time.",
+    "story": [
+      "Kerala began the pandemic with a public-health system that was already strong on paper. What it built next was a digital backbone that made every part of that system legible: who was tested, where, with what result, what they needed next, and whether they got it.",
+      "For citizens, it meant an actual phone number that worked, a vaccine appointment that didn't move three times, and a hospital that could honestly tell you whether it had a bed before you set out to find one."
+    ],
+    "changes": [
+      "Test results, contact tracing and quarantine support reached citizens within hours, not days.",
+      "Hospital bed and oxygen availability was visible to the public — reducing panic and ambulance roulette.",
+      "Vaccine slot allocation was tied to actual stock, ending the cycle of cancelled appointments.",
+      "Vulnerable populations (elderly, comorbid, palliative) were proactively contacted by ASHAs, not just expected to walk in."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "Covid Jagrata is the umbrella name for Kerala's integrated pandemic command stack — a coordinated set of digital modules that connected the field (ASHAs, primary health centres) to the state command room, and back.",
+      "Its anchoring belief was that data is a service, not a report. Every form filled at a sub-centre had to show up in time to inform the next decision — about ambulance dispatch, oxygen allocation, vaccine routing, or quarantine support.",
+      "The system absorbed the early Kerala Rescue learnings: open APIs, citizen-facing front-ends in Malayalam, a moderation/triage layer, and a strong reliance on the existing health volunteer cadre rather than a new bureaucracy."
+    ],
+    "challenges": [
+      { "title": "Heterogeneous data sources", "description": "Labs, hospitals, primary health centres, ASHAs and call centres all generated different records. Reconciling identities across them without violating privacy was the hardest engineering problem." },
+      { "title": "Volume and velocity", "description": "Peak case loads pushed the system into millions of events per day. Scaling without losing data — or compromising on response times — required disciplined infrastructure choices." },
+      { "title": "Trust and rumour", "description": "Misinformation moved faster than tests. Public dashboards, citizen-facing chatbots and ASHA-led community messaging were as important as the back-end systems." },
+      { "title": "Equity in vaccination", "description": "Smartphone-based slot booking risks excluding the elderly and the poor. ASHA-led walk-in registration and quotas were essential to avoid creating a digital divide on top of a health divide." }
+    ],
+    "actions": [
+      "Established a unified citizen ID (linked to ration card / Aadhaar) for pandemic records, with strict purpose limitation.",
+      "Built a Reverse Quarantine module to proactively shield the elderly and comorbid — not just isolate the infected.",
+      "Connected 1,200+ hospitals to a live bed and oxygen availability dashboard, visible to the public and ambulances.",
+      "Tied vaccine slot opening to actual vial-level inventory at the centre — slots disappear when stock runs out.",
+      "Deployed Disha (the state's health helpline) as the always-on triage and information layer.",
+      "Published district-wise dashboards with consistent definitions — no more parallel numbers from different departments."
+    ],
+    "technology": [
+      "Microservice architecture on Kubernetes, autoscaled across pandemic peaks",
+      "OpenMRS-derived patient module integrated with eHealth Kerala records",
+      "PostgreSQL with row-level access control for purpose-bound data sharing",
+      "Apache Kafka for the test/result/quarantine event stream",
+      "OTP-based citizen access with explicit consent flows",
+      "Public dashboards built on open standards, embeddable by media partners"
+    ],
+    "outcomes": [
+      "Over 80 million person-records tracked through testing, quarantine and vaccination cycles.",
+      "Mortality kept measurably lower than comparable states in early waves, attributed in part to Reverse Quarantine and bed visibility.",
+      "Vaccine slot adherence reached 99.4% in onboarded centres, with minimal stock wastage.",
+      "The same backbone supported subsequent public-health programmes (TB elimination, NCD screening).",
+      "Kerala's pandemic data stack became a reference model for state-level public health digitisation."
+    ],
+    "processFlow": [
+      { "title": "1. Citizen identification", "description": "Each person has a single record across testing, treatment, quarantine and vaccination, with consent-bound linkages." },
+      { "title": "2. Event capture", "description": "Labs, hospitals, PHCs and ASHAs log every relevant event — tests, beds, oxygen, vaccinations — in near-real-time." },
+      { "title": "3. Triage and outreach", "description": "Disha helpline and ASHA cadre proactively reach out to high-risk and recently-positive citizens." },
+      { "title": "4. Resource allocation", "description": "State and district control rooms see live availability of beds, oxygen and vaccine stock; reallocate dynamically." },
+      { "title": "5. Public transparency", "description": "District dashboards published with consistent definitions; media and citizens consume from the same source." },
+      { "title": "6. Programme handover", "description": "After acute phase, modules pivot to routine public-health programmes — TB, NCD, maternal health." }
+    ],
+    "replicationToolkit": [
+      "Reverse Quarantine SOP and ASHA outreach playbook",
+      "Hospital bed and oxygen reporting API specification",
+      "Vaccine slot–to–inventory binding rules and audit logs",
+      "Citizen consent and data-sharing policy templates",
+      "Disha-style integrated helpline staffing and triage model",
+      "Public dashboard definitions and embed kits"
+    ]
+  },
+  "timeline": [
+    { "date": "Jan 30, 2020", "title": "India's first Covid case (in Kerala)", "description": "Existing surveillance triggers state-level response; integrated digital command discussions begin." },
+    { "date": "Mar 2020", "title": "Disha and quarantine modules go live", "description": "Helpline + quarantine register integrated; ASHAs onboarded for proactive outreach." },
+    { "date": "May 2020", "title": "Reverse Quarantine launched", "description": "Elderly and comorbid citizens proactively shielded; case fatality rates remain low through early waves." },
+    { "date": "Jan 2021", "title": "Vaccination module connected", "description": "Slot-to-inventory binding rolled out across districts; ASHA-led walk-in option preserved." },
+    { "date": "2022 →", "title": "Pivot to routine public health", "description": "Backbone repurposed for TB elimination, NCD screening and maternal/child health programmes." }
+  ],
+  "downloads": [
+    { "title": "Covid Jagrata after-action report", "type": "PDF · 96 pages", "icon": "📑", "link": "contact.html" },
+    { "title": "Reverse Quarantine playbook", "type": "PDF · 22 pages", "icon": "🛡", "link": "contact.html" },
+    { "title": "Hospital bed API spec", "type": "Web · OpenAPI", "icon": "🔌", "link": "contact.html" },
+    { "title": "Citizen consent templates", "type": "DOCX · template pack", "icon": "📝", "link": "contact.html" }
+  ]
+}

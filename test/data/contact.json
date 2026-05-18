@@ -1,0 +1,98 @@
+{
+  "meta": { "title": "Contact & Feedback — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "centered",
+      "eyebrow": "Contact & Feedback",
+      "title": "Citizens, officers, researchers — we want to hear from you.",
+      "subtitle": "Pick the channel that matches who you are. Click to open your email client — or copy the address if you'd rather write later.",
+      "primaryCta":   { "text": "Write to us", "link": "#channels" }
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "How we respond",
+      "title": "Honest expectations on response time.",
+      "body": [
+        "We are a small platform run with practitioner support. Citizen queries usually get a response within 2–3 working days. Officer / researcher requests, depending on complexity, may take 5–10 days.",
+        "If your question is urgent or sensitive, mark it clearly in the subject — we'll route it to the most relevant collaborator."
+      ]
+    },
+    {
+      "type": "contact",
+      "id": "channels",
+      "eyebrow": "Write to us",
+      "title": "Three doors. One team.",
+      "subtitle": "Click \"Open in email\" to start a message in your mail app, or \"Copy email\" to paste the address wherever you like.",
+      "audiences": [
+        {
+          "label": "Citizen",
+          "icon": "👥",
+          "title": "For Citizens",
+          "description": "Have a question, a story, or a piece of feedback? Write to us in your own words — we read every message.",
+          "toEmail": "hello@surajyapatham.in",
+          "subject": "Citizen message — Surajyapatham",
+          "body": "Hi Surajyapatham team,\n\n[Tell us what's on your mind — a question, an idea, feedback, or a story you'd like to share.]\n\nName:\nDistrict / State:\n",
+          "hintsTitle": "What to write about",
+          "hints": [
+            "Ask a question about a service or right",
+            "Share an idea for the portal",
+            "Give feedback on something you read here",
+            "Tell us a story from your district"
+          ]
+        },
+        {
+          "label": "Officer",
+          "icon": "🏛",
+          "title": "For Officers",
+          "description": "Looking for a toolkit, a model, or a replication conversation? Tell us what you're trying to do and the state / district you're in.",
+          "toEmail": "officers@surajyapatham.in",
+          "subject": "Officer request — Surajyapatham",
+          "body": "Hi Surajyapatham team,\n\nI'd like to [request a toolkit / discuss replication / submit a case study].\n\nName:\nDesignation:\nState / District:\n\nContext (programme, problem, constraints):\n",
+          "hintsTitle": "Common requests",
+          "hints": [
+            "Request a model or toolkit",
+            "Discuss replication in your district",
+            "Submit a case study you have led",
+            "Co-host a webinar or mentorship session"
+          ]
+        },
+        {
+          "label": "Researcher",
+          "icon": "🔬",
+          "title": "For Researchers & Institutions",
+          "description": "Looking to collaborate, partner on knowledge, or contribute a paper? Send us a short note and we'll respond with next steps.",
+          "toEmail": "research@surajyapatham.in",
+          "subject": "Research collaboration — Surajyapatham",
+          "body": "Hi Surajyapatham team,\n\nProposal summary:\n\nInstitution / Affiliation:\nType of collaboration (knowledge partnership / co-authored research / whitepaper / data request):\n\nBrief description of what you're proposing and what you'd like from us:\n",
+          "hintsTitle": "Types of collaboration",
+          "hints": [
+            "Knowledge partnerships",
+            "Co-authored research",
+            "Whitepaper or column contributions",
+            "Case study / data requests"
+          ]
+        }
+      ],
+      "contactInfo": [
+        { "icon": "✉",  "label": "General email", "value": "hello@surajyapatham.in", "link": "mailto:hello@surajyapatham.in" },
+        { "icon": "🌐", "label": "Website",       "value": "surajyapatham.in",       "link": "index.html" },
+        { "icon": "📍", "label": "Based in",      "value": "Thiruvananthapuram, India" }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "earth",
+      "icon": "🔒",
+      "title": "A note on privacy",
+      "body": "We do not share your contact details with third parties. Officer and researcher requests are routed to relevant collaborators — with your permission. Citizen messages are handled by a small editorial team."
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Partner with us",
+      "title": "Let's build the next decade of citizen-centric governance — together.",
+      "subtitle": "States, institutions, civil society, CSR partners and innovators — we welcome long-form conversations on collaboration.",
+      "cta": { "text": "Email us", "link": "mailto:hello@surajyapatham.in" }
+    }
+  ]
+}

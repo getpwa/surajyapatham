@@ -1,0 +1,99 @@
+{
+  "id": "forest-rights",
+  "slug": "forest-rights",
+  "title": "Forest Rights Act Implementation",
+  "subtitle": "Recognising community and individual forest rights for tribal communities — at scale, with paperwork that actually closes.",
+  "category": "Social Equity",
+  "location": "Wayanad, Kerala",
+  "tags": ["forest rights", "tribal welfare", "FRA", "community rights"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=70", "alt": "Forest landscape", "caption": "Recognised forests under community management." },
+      { "src": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=70", "alt": "Gram sabha meeting", "caption": "The Gram Sabha is the authority. The administration is the witness." },
+      { "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=70", "alt": "Title document handover", "caption": "Title documents that survive a court, not just a file." }
+    ]
+  },
+  "stats": [
+    { "value": "20K+", "label": "Individual rights titled" },
+    { "value": "300+", "label": "Community Forest Rights recognised" },
+    { "value": "85%", "label": "Claims processed end-to-end" },
+    { "value": "60%", "label": "Reduction in pendency" }
+  ],
+  "citizen": {
+    "summary": "For tribal communities in Wayanad, the Forest Rights Act gives legal recognition to land and forests they have used for generations. But the law on paper was, for years, a thicket of rejected claims and missing maps. This initiative built a patient, ground-up process — community by community — to turn the Act into actual titles.",
+    "story": [
+      "Anitha, a member of a Kattunaikan community, had grown coffee on the same plot her grandparents had farmed. The Forest Department called it encroachment. The FRA said otherwise. For years, neither side could agree on whose paperwork was authoritative.",
+      "The implementation reform paired patient community-level engagement with cleaner inter-departmental rules — and a Gram Sabha–led mapping exercise that made claims legible to forest, revenue and tribal departments alike."
+    ],
+    "changes": [
+      "Individual Forest Rights titles delivered for thousands of households — many for the first time.",
+      "Community Forest Rights recognised for hundreds of hamlets, with management responsibility back to the Gram Sabha.",
+      "Maps and claims now use a shared format readable by Forest, Revenue and Tribal departments.",
+      "Rejected claims now come with reasons and an appeals path — not silence."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "The Forest Rights Act (FRA) is one of the most important pieces of post-Independence land legislation. But implementation has lagged across the country because it sits at the awkward intersection of three departments — Tribal Welfare, Revenue and Forest — each with its own claim on the same hectare.",
+      "The Wayanad implementation reform was less a new programme and more a re-engineering of the existing one. It strengthened Gram Sabha capacity to file complete claims, reconciled departmental processes to the FRA timeline, and held a quarterly review at the District Collector's level.",
+      "The deeper insight was procedural: rejection is not a verdict. A rejected claim with reasons and an appeal path can be re-filed and won. A rejected claim with silence dies on the file."
+    ],
+    "challenges": [
+      { "title": "Departmental mistrust", "description": "Forest and Revenue Departments often saw FRA claims as adversarial. Joint field verification protocols replaced separate, conflicting site visits." },
+      { "title": "Gram Sabha capacity", "description": "Filing complete claims requires maps, evidence and procedures. Sustained training and on-call tribal facilitators were essential." },
+      { "title": "Community Forest Rights complexity", "description": "CFR claims cover entire forest patches with shared use. They require careful boundary delineation and intra-community consensus." },
+      { "title": "Closing the appeals loop", "description": "Many earlier rejections sat in limbo without reasons or hearings. A backlog clearance drive with reasoned orders was needed before new claims could move." }
+    ],
+    "actions": [
+      "Set up tribal facilitator cadre at the panchayat level to support Gram Sabhas in claim preparation.",
+      "Issued a joint SOP signed by Forest, Revenue and Tribal Departments for site verification, with timelines.",
+      "Cleared the backlog of pending claims with reasoned orders — converting silence into either titles or appeals.",
+      "Instituted quarterly review at the District Collector level with public dashboards on claim status.",
+      "Linked recognised CFR areas to convergent livelihood programmes (NTFP, eco-tourism, watershed)."
+    ],
+    "technology": [
+      "GIS-based claim mapping system co-readable by Forest, Revenue and Tribal departments",
+      "Mobile field verification app with photo + GPS evidence capture",
+      "Public dashboard with claim status at panchayat level",
+      "Document repository for evidence — generational use, dwelling proofs, oral histories"
+    ],
+    "outcomes": [
+      "Over 20,000 Individual Forest Rights titles issued in the district.",
+      "300+ Community Forest Rights recognised, transferring management responsibility back to Gram Sabhas.",
+      "End-to-end claim processing rate rose to 85% (from a stagnant baseline).",
+      "Pendency in the district dropped by 60% within two years of the reform.",
+      "The Wayanad SOP has informed FRA implementation reforms in other districts and states."
+    ],
+    "processFlow": [
+      { "title": "1. Gram Sabha mobilisation", "description": "Tribal facilitators support the community to identify rights, evidence and mappings." },
+      { "title": "2. Claim filing", "description": "Individual or community claims filed with mapped boundaries and supporting evidence." },
+      { "title": "3. Joint verification", "description": "Forest, Revenue and Tribal officers conduct a single joint site visit — not three separate ones." },
+      { "title": "4. SDLC / DLC review", "description": "Sub-divisional and district committees decide, with reasoned orders. Rejections include appeal routes." },
+      { "title": "5. Title issuance", "description": "Approved claims receive titles in a defined format readable across departments." },
+      { "title": "6. CFR management", "description": "Recognised communities set up Forest Rights Committees to manage and benefit from CFR areas." }
+    ],
+    "replicationToolkit": [
+      "Tribal facilitator cadre job description and curriculum",
+      "Joint site verification SOP (Forest / Revenue / Tribal)",
+      "Claim mapping standards and GIS schema",
+      "Backlog clearance protocol with reasoned-order template",
+      "Public dashboard definitions for FRA pendency",
+      "Post-recognition livelihood convergence playbook"
+    ]
+  },
+  "timeline": [
+    { "date": "Phase 0", "title": "Diagnostic", "description": "District audits backlog of FRA claims; identifies inter-departmental friction as the binding constraint." },
+    { "date": "Phase 1", "title": "Joint SOP signed", "description": "Forest, Revenue and Tribal departments sign joint verification protocol." },
+    { "date": "Phase 2", "title": "Backlog clearance", "description": "Pending claims either titled or appeal-able with reasoned orders; silence eliminated." },
+    { "date": "Phase 3", "title": "CFR rollout", "description": "Community Forest Rights focus; Gram Sabhas trained to file and manage CFR claims." },
+    { "date": "Ongoing", "title": "Livelihood convergence", "description": "Recognised CFR areas linked to NTFP, eco-tourism and watershed programmes." }
+  ],
+  "downloads": [
+    { "title": "Joint verification SOP", "type": "PDF · 16 pages", "icon": "📋", "link": "contact.html" },
+    { "title": "Claim mapping standards", "type": "PDF · 24 pages", "icon": "🗺", "link": "contact.html" },
+    { "title": "Tribal facilitator handbook", "type": "PDF · 36 pages", "icon": "📘", "link": "contact.html" },
+    { "title": "Backlog clearance protocol", "type": "PDF · 10 pages", "icon": "📑", "link": "contact.html" }
+  ]
+}

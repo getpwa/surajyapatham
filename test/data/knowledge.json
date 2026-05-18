@@ -1,0 +1,135 @@
+{
+  "meta": { "title": "Knowledge Centre — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split",
+      "eyebrow": "Knowledge Centre",
+      "title": "Deep reads for serious <span class='text-brand-700 dark:text-brand-400'>practitioners</span>.",
+      "subtitle": "Innovation digests, implementation-ready playbooks, expert columns, and evidence-backed whitepapers — for administrators, researchers, aspirants, and the policy-curious.",
+      "primaryCta":   { "text": "Innovation Digest", "link": "#innovation" },
+      "secondaryCta": { "text": "Playbooks",         "link": "#playbooks" },
+      "image": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=1200&q=70",
+      "imageAlt": "Stack of policy reports and dashboards on a desk"
+    },
+    {
+      "type": "cards",
+      "id": "innovation",
+      "style": "image",
+      "eyebrow": "Innovation Digest",
+      "title": "Top governance innovations — every month",
+      "subtitle": "A curated list of impactful initiatives from across India and the world — each summarised with what worked, what didn't, and what travels well.",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Mission Karmayogi",
+          "subtitle": "India — Civil services capacity",
+          "category": "Capacity Building",
+          "description": "A digital learning platform building a future-ready civil service through role-based capability building and continuous learning.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        },
+        {
+          "title": "Estonia's e-Residency & e-Governance",
+          "subtitle": "Estonia — Digital state",
+          "category": "Digital State",
+          "description": "A whole-of-government digital platform where 99% of public services are available online — and the underlying once-only principle.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        },
+        {
+          "title": "Bhoomi (Karnataka)",
+          "subtitle": "India — Land records pioneer",
+          "category": "Digital Governance",
+          "description": "One of India's earliest large-scale land record digitisation programmes — lessons that still shape state-level land governance today.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        },
+        {
+          "title": "Singapore HDB",
+          "subtitle": "Singapore — Public housing at scale",
+          "category": "Social Equity",
+          "description": "Public housing that 80%+ of the country lives in — and the institutional design that made dignity-by-default an outcome, not an aspiration.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        },
+        {
+          "title": "Brazil's Bolsa Família",
+          "subtitle": "Brazil — Conditional cash transfer",
+          "category": "Welfare",
+          "description": "One of the world's largest conditional cash transfer programmes — and a hard look at what targeting, conditionalities and delivery cost vs. deliver." ,
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        },
+        {
+          "title": "Telangana T-SAT",
+          "subtitle": "India — Edu-broadcast",
+          "category": "Education",
+          "description": "Mass-reach satellite-based education during and after the pandemic — how a low-cost broadcast layer extended formal education.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read summary", "link": "contact.html" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "playbooks",
+      "background": "muted",
+      "eyebrow": "Playbooks & Handbooks",
+      "title": "Implementation-ready manuals",
+      "subtitle": "Field-tested handbooks for specific governance functions. Written for the officer who has to make the next decision, not the researcher who has to write the next paper.",
+      "columns": 2,
+      "items": [
+        { "icon": "📘", "title": "Grievance redressal playbook",       "description": "Drawn from the Oppam model — a process-first approach to cutting redressal time by 80%+ without buying new software." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=oppam" } },
+        { "icon": "📘", "title": "Disaster response playbook",         "description": "From Kerala Rescue and Covid Jagrata — coordination, command, communication, and the politics of letting civilians inside the tent." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=kerala-rescue" } },
+        { "icon": "📘", "title": "Digital land records playbook",      "description": "From Ente Bhoomi and ILIMS — three departments, one truth, a thirty-day objection window, and the inter-departmental MoU that made it possible." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=ente-bhoomi" } },
+        { "icon": "📘", "title": "Universal housing playbook",         "description": "From Udayam — the woman's-title default, the ward-sabha verification, and the convergence engine that turned housing into welfare delivery." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=udayam" } },
+        { "icon": "📘", "title": "Public health digitisation playbook","description": "From eHealth Kerala — patient-centric records, clinician co-design, and the long-horizon investment that paid off during the pandemic." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=ehealth" } },
+        { "icon": "📘", "title": "Forest Rights implementation playbook","description": "From Wayanad's FRA reform — joint verification, reasoned orders, and the procedural moves that turn rejection into a path, not a wall." , "cta": { "text": "Read playbook", "link": "case-studies.html?slug=forest-rights" } }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Expert Columns",
+      "title": "Voices from the field",
+      "subtitle": "Senior officers, academics, and domain experts — writing about the parts of governance that don't fit into a circular.",
+      "columns": 3,
+      "items": [
+        { "icon": "✍", "title": "The Collector's calendar",            "description": "On how a senior officer's diary, more than her dashboards, signals what the district actually cares about.", "cta": { "text": "Read column", "link": "contact.html" } },
+        { "icon": "✍", "title": "When data lies politely",              "description": "A reflection on the gap between what dashboards show and what the field experiences — and what to do about it.", "cta": { "text": "Read column", "link": "contact.html" } },
+        { "icon": "✍", "title": "The most underrated office",           "description": "Why the ward sabha is, dollar for dollar, the most productive piece of Indian governance — and how to make it stronger.", "cta": { "text": "Read column", "link": "contact.html" } },
+        { "icon": "✍", "title": "Convergence without coercion",         "description": "Lessons from running multi-department missions where no department wants to be the loser.", "cta": { "text": "Read column", "link": "contact.html" } },
+        { "icon": "✍", "title": "Procurement is policy",                "description": "How what the state buys shapes what the state becomes — and why procurement reform is the quietest culture change there is.", "cta": { "text": "Read column", "link": "contact.html" } },
+        { "icon": "✍", "title": "Hiring for the public interest",       "description": "What we look for, what we miss, and what the civil services exam tests vs. what the job actually rewards.", "cta": { "text": "Read column", "link": "contact.html" } }
+      ]
+    },
+    {
+      "type": "cards",
+      "background": "muted",
+      "eyebrow": "Whitepapers & Research",
+      "title": "Evidence-backed publications",
+      "subtitle": "Deeper publications you can cite — written with academic rigour but practitioner sensibility.",
+      "columns": 2,
+      "items": [
+        { "icon": "📑", "title": "Reverse Quarantine — a public-health innovation", "description": "How an outreach-driven shielding strategy reduced mortality among the elderly and comorbid in Kerala's early Covid waves.", "cta": { "text": "Read the case", "link": "case-studies.html?slug=covid-jagrata" } },
+        { "icon": "📑", "title": "Time savings as a civic dividend",                "description": "Modelling the citizen time savings of Ente Bhoomi against pre-digitisation baselines.", "cta": { "text": "Read the case", "link": "case-studies.html?slug=ente-bhoomi" } },
+        { "icon": "📑", "title": "The grievance gap",                              "description": "An evidence review of grievance redressal performance across Indian states — and what high performers do differently.", "cta": { "text": "Read the case", "link": "case-studies.html?slug=oppam" } },
+        { "icon": "📑", "title": "Convergence at the address",                     "description": "A study of household-level convergence between housing, health, education and livelihoods in Kerala's Udayam programme.", "cta": { "text": "Read the case", "link": "case-studies.html?slug=udayam" } }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "earth",
+      "icon": "📚",
+      "title": "Want to contribute a piece?",
+      "body": "We accept guest columns, working papers, and digest contributions from serving and retired officers, academics, civil society practitioners and researchers. Write to us with your draft or proposal."
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Stay in the loop",
+      "title": "Monthly Innovation Digest in your inbox.",
+      "subtitle": "Curated, no spam, easy to skim. Officers, researchers, and the policy-curious — welcome.",
+      "cta": { "text": "Get in touch to subscribe", "link": "contact.html" }
+    }
+  ]
+}

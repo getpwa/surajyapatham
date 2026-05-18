@@ -1,0 +1,101 @@
+{
+  "id": "oppam",
+  "slug": "oppam",
+  "title": "Oppam Grievance Model",
+  "subtitle": "A simple WhatsApp-and-officer-led grievance flow that cut resolution times from 21 days to 96 hours — without buying a single new piece of software.",
+  "category": "Citizen Engagement",
+  "location": "Kerala — District",
+  "tags": ["grievance redressal", "citizen engagement", "service delivery"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1200&q=70", "alt": "Officer reviewing grievance on phone", "caption": "Every grievance, on the Collector's phone within 24 hours." },
+      { "src": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=70", "alt": "Citizens at a grievance desk", "caption": "Walk-ins still welcome — they reach the same queue as WhatsApp." },
+      { "src": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=70", "alt": "Department review meeting", "caption": "Weekly pendency review made the model self-correcting." }
+    ]
+  },
+  "stats": [
+    { "value": "21d → 96h", "label": "Average resolution time" },
+    { "value": "92%", "label": "First-call closure rate" },
+    { "value": "0", "label": "New software licences bought" },
+    { "value": "₹0", "label": "Capital expenditure" }
+  ],
+  "citizen": {
+    "summary": "Oppam (\"with you\") is a deliberately low-tech grievance model. You send a message — by WhatsApp, in writing, or in person — and someone in the District Collector's office acknowledges within 24 hours, names an owner within 48, and closes the loop within 96. Most of the time, it just works.",
+    "story": [
+      "When a citizen finds that her pension has been stopped without explanation, the worst outcome is silence. The Oppam model treats silence as the actual failure to be fixed — even more than the original problem.",
+      "By committing to four guarantees — acknowledgement, named owner, status visibility, and timed closure — Oppam made the system answer to its own promises, with a level of public visibility that made backsliding politically costly."
+    ],
+    "changes": [
+      "A clear single window — WhatsApp number + in-person desk + written letters — all flow into the same queue.",
+      "Every grievance gets an acknowledgement within 24 hours with a tracking ID and the named officer who will resolve it.",
+      "Citizens can ask for status at any time, and weekly pendency reports are made public at the ward level.",
+      "Departments that try to ping-pong cases between themselves are visible in the pendency dashboard — and lose."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "The Oppam model started in a single district and asked a hard question: do we actually need a new platform to fix grievance redressal, or do we need to fix the assumptions inside the existing one?",
+      "Their answer was to redesign the process, not the technology. A small Collector-led cell consolidated all citizen inputs into one queue, set four hard SLAs, made pendency transparent, and held a weekly cross-department review.",
+      "The result is a model that has since been adapted by other districts and departments — and that gives a clear lesson: when the politics of accountability are right, the technology stack required is surprisingly small."
+    ],
+    "challenges": [
+      { "title": "Inter-department ping-pong", "description": "Most grievances span more than one department. The default behaviour was to bounce the case sideways. Naming a single accountable owner per grievance broke the loop." },
+      { "title": "Volume without prioritisation", "description": "Without triage, urgent cases (medical, safety) get stuck behind paperwork queries. A simple three-tier severity tag fixed that." },
+      { "title": "Closure quality vs. closure count", "description": "Officers gamed early metrics by closing without resolving. A 30-day citizen call-back audit caught and corrected this." },
+      { "title": "Sustaining attention after the Collector moves on", "description": "Models built on personality fade. Codifying the SOP, dashboards and review cadence made the model survive transfers." }
+    ],
+    "actions": [
+      "Established a Collector-led grievance cell with full-time staff drawn from existing departments.",
+      "Set four guarantees: 24-hour acknowledgement, 48-hour owner assignment, status-on-demand, 96-hour closure (with documented exceptions).",
+      "Aggregated all input channels (WhatsApp, in-person, written, helpline) into a single queue with one tracking ID.",
+      "Published weekly pendency dashboards at the ward level — with department-wise breakdowns.",
+      "Instituted a weekly inter-department review chaired by the Collector to close systemic issues, not just individual cases.",
+      "Added a 30-day citizen call-back audit on a random sample to prevent closure gaming."
+    ],
+    "technology": [
+      "WhatsApp Business account as primary citizen channel (no new software licences)",
+      "Existing departmental email + a shared Google/Excel-based tracker as the queue",
+      "Power BI / spreadsheet dashboards published weekly",
+      "Helpline numbers integrated with the same tracker by call centre staff",
+      "Photo evidence collected on the same WhatsApp thread"
+    ],
+    "outcomes": [
+      "Average grievance resolution time fell from 21 days to 96 hours.",
+      "First-call closure rate reached 92% — most cases resolved without inter-department referral.",
+      "Citizen satisfaction (measured on the 30-day audit) reached 87% \"resolved and satisfactory\".",
+      "Three other districts have adopted the model with locally adapted SLAs.",
+      "Capital expenditure: zero. The entire model runs on existing platforms and reassigned staff."
+    ],
+    "processFlow": [
+      { "title": "1. Single window", "description": "WhatsApp + in-person + written + helpline all consolidate into one tracker with a single tracking ID." },
+      { "title": "2. Acknowledgement (24h)", "description": "Grievance cell acknowledges, classifies (severity + department), and confirms tracking ID." },
+      { "title": "3. Owner assignment (48h)", "description": "Single named officer becomes accountable; ping-pong is now visible and culturally costly." },
+      { "title": "4. Resolution (96h)", "description": "Owner closes the loop with the citizen; documented exceptions for genuinely longer cases." },
+      { "title": "5. Pendency dashboard", "description": "Weekly publication at ward / department level; review by Collector with department heads." },
+      { "title": "6. 30-day audit", "description": "Random call-back audit verifies actual citizen satisfaction; closure gaming corrected." }
+    ],
+    "replicationToolkit": [
+      "Oppam cell job description and staffing template",
+      "Four-guarantees SLA document and exception protocol",
+      "Single-queue tracker schema (Excel / Google Sheets / Power BI)",
+      "Weekly review meeting agenda and decision log template",
+      "30-day citizen call-back audit script and scoring rubric",
+      "Communication kit: WhatsApp templates, posters, citizen FAQ"
+    ]
+  },
+  "timeline": [
+    { "date": "Month 0", "title": "Diagnostic", "description": "Collector's office audits existing grievance flows — identifies that the bottleneck is process, not tech." },
+    { "date": "Month 1", "title": "Pilot in one taluk", "description": "Four-guarantee SLA tested with full transparency; lessons captured weekly." },
+    { "date": "Month 2", "title": "District roll-out", "description": "Model extended district-wide; departmental review cadence institutionalised." },
+    { "date": "Month 6", "title": "First call closure crosses 90%", "description": "Audit shows actual citizen satisfaction matches dashboard claims." },
+    { "date": "Year 1+", "title": "Adaptation by other districts", "description": "Replication toolkit released; three districts adopt locally adapted versions." }
+  ],
+  "downloads": [
+    { "title": "Oppam SOP", "type": "PDF · 22 pages", "icon": "📋", "link": "contact.html" },
+    { "title": "Single-queue tracker template", "type": "XLSX · template", "icon": "📊", "link": "contact.html" },
+    { "title": "WhatsApp templates", "type": "DOCX · message library", "icon": "💬", "link": "contact.html" },
+    { "title": "Replication checklist", "type": "PDF · 6 pages", "icon": "✅", "link": "contact.html" }
+  ]
+}

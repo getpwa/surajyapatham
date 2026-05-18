@@ -1,0 +1,114 @@
+{
+  "meta": { "title": "Foundations of Good Governance — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split",
+      "eyebrow": "Foundations",
+      "title": "Principles, values, and frameworks that shape <span class='text-brand-700 dark:text-brand-400'>effective, citizen-centric governance</span>.",
+      "subtitle": "For public servants, students, researchers and civil services aspirants — practical insights blended with conceptual depth.",
+      "primaryCta":   { "text": "Core values",     "link": "#values" },
+      "secondaryCta": { "text": "Systems thinking", "link": "#systems" },
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=70",
+      "imageAlt": "Government buildings and citizen engagement"
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "Citizen-Centric Governance",
+      "title": "When easy processes meet dignity in delivery.",
+      "body": [
+        "Citizen-centric governance is not a slogan — it is a design discipline. It begins from the assumption that the citizen's time, dignity and information are inputs to be respected, not friction to be tolerated.",
+        "Done well, the same office that once issued certificates in 21 days does it in 48 hours. The same officer who once explained rules to citizens now explains options. The same department that once pushed forms now pushes outcomes."
+      ],
+      "bullets": [
+        "Processes designed for the citizen's day, not the office's calendar",
+        "Information available before it is asked for",
+        "Service standards published, tracked, and honoured"
+      ]
+    },
+    {
+      "type": "pillars",
+      "id": "values",
+      "eyebrow": "Core values",
+      "title": "Five values, repeated until they become culture",
+      "subtitle": "Frameworks come and go. These values are the soil.",
+      "items": [
+        { "icon": "🔍", "title": "Transparency",  "description": "Information that citizens can find, follow, and trust — from budgets to the movement of their own file." },
+        { "icon": "🕊", "title": "Dignity",        "description": "Every encounter with the state must affirm the citizen's standing — never diminish it." },
+        { "icon": "🤝", "title": "Inclusion",      "description": "Designs that reach the last person first — and assume that the easiest user is not the only user." },
+        { "icon": "📊", "title": "Accountability", "description": "Clear ownership of outcomes. Real consequences for failure. Public recognition for excellence." },
+        { "icon": "⚖",  "title": "Fairness",       "description": "Rules applied evenly. Discretion exercised with reason. The powerful treated the same as the powerless." }
+      ]
+    },
+    {
+      "type": "two-column",
+      "eyebrow": "Ethical Public Service",
+      "title": "When the right thing and the easy thing diverge — the framework matters.",
+      "body": [
+        "Ethical public service is not the absence of dilemmas. It is the presence of a clear way to think through them. Codes of conduct, conflict-of-interest declarations, and decision frameworks are the scaffolding that protect officers — and the public — from drift."
+      ],
+      "bullets": [
+        "Code of conduct: written, read, and revisited",
+        "Conflict of interest: declared before it becomes a problem",
+        "Ethical decision frameworks: structured questions for hard moments",
+        "Whistleblower channels: independent, protected, taken seriously"
+      ],
+      "cta": { "text": "See the dilemmas in practice", "link": "dilemmas.html" },
+      "image": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Officer reading a code of conduct document"
+    },
+    {
+      "type": "two-column",
+      "id": "systems",
+      "imagePosition": "left",
+      "eyebrow": "Systems Thinking",
+      "title": "Public problems are systems. Public solutions must be too.",
+      "body": [
+        "Departments don't fail one at a time. They fail in chains — health depends on water, water depends on land records, land records depend on local self-government. A systems lens helps officers see beyond their immediate KPI and design for the whole."
+      ],
+      "bullets": [
+        "Mission-mode reforms with cross-department sponsorship",
+        "Convergence across departments around the citizen, not the org chart",
+        "Data-driven governance with live dashboards and feedback loops",
+        "Institutional strengthening — capacity, structure, culture, processes"
+      ],
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Officers reviewing a systems map"
+    },
+    {
+      "type": "cards",
+      "background": "muted",
+      "eyebrow": "Sustainability & Resilience",
+      "title": "Climate-resilient public administration",
+      "subtitle": "The administration of the future is not just digital. It is also climate-aware, disaster-ready, and intergenerationally fair.",
+      "columns": 3,
+      "items": [
+        { "icon": "🌱", "title": "Mainstreaming climate",        "description": "Climate considerations built into every project — from procurement to placement." },
+        { "icon": "🌊", "title": "Disaster-resilient planning",  "description": "Hazard mapping, redundancy, and pre-positioned response — not improvisation under stress." },
+        { "icon": "♻", "title": "Circular procurement",         "description": "Government as the largest buyer — using that leverage for sustainability." },
+        { "icon": "🌳", "title": "Ecosystem-based local plans",  "description": "Watershed, forest and coastal logic baked into Panchayat-level decisions." },
+        { "icon": "📐", "title": "Green building & infra",        "description": "Norms, audits and incentives that make sustainability the default, not a premium." },
+        { "icon": "🌍", "title": "Intergenerational accounting",  "description": "Decisions today that leave tomorrow's institutions, environment and communities intact." }
+      ]
+    },
+    {
+      "type": "accordion",
+      "eyebrow": "Key concepts",
+      "title": "Definitions you'll see across this portal",
+      "items": [
+        { "question": "What is citizen-centric governance?", "answer": "Governance that treats the citizen's time, dignity and information as design inputs. It measures success by outcomes the citizen can feel — not just outputs the office can report." },
+        { "question": "What is systems thinking?", "answer": "An approach that sees a public problem as the result of interconnected causes — and that designs solutions that work with feedback loops, delays, and unintended consequences in mind." },
+        { "question": "What is mission mode?", "answer": "A way of organising a public goal with a single accountable leader, a tight cross-functional team, and clear time-bound targets — distinct from departmental routine." },
+        { "question": "What is convergence?", "answer": "When departments coordinate around the citizen or the location instead of around their own org charts. Convergence is what turns a 'scheme' into a 'service'." },
+        { "question": "What is a citizen charter?", "answer": "A public promise from a department — what service will be delivered, in what time, with what redressal if it isn't. The best ones are short, SLA-bound, and tracked publicly." }
+      ]
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Bring it into practice",
+      "title": "From principle to playbook.",
+      "subtitle": "See how these foundations show up in Kerala, Andhra Pradesh, and beyond.",
+      "cta": { "text": "Explore case studies", "link": "case-studies.html" }
+    }
+  ]
+}

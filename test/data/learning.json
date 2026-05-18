@@ -1,0 +1,132 @@
+{
+  "meta": { "title": "Learning Hub — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split",
+      "eyebrow": "Learning Hub",
+      "title": "Self-paced learning, live webinars, and <span class='text-saffron-600'>peer mentorship</span>.",
+      "subtitle": "Capability building for officers and civil society — built around the way public service work is actually done, not the way textbooks describe it.",
+      "primaryCta":   { "text": "Browse modules",  "link": "#modules" },
+      "secondaryCta": { "text": "Webinar calendar", "link": "#webinars" },
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=70",
+      "imageAlt": "Officers in a peer-learning workshop"
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "Why this exists",
+      "title": "Capability is the binding constraint.",
+      "body": [
+        "Every governance reform we have studied — without exception — has been bottlenecked at some point on capability. Not money, not technology, not even political will. Capability.",
+        "The Learning Hub is our small contribution to that bottleneck. It is free, practitioner-led, and designed around the actual decisions an officer or activist will face — not the ones a textbook expects them to face."
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "modules",
+      "background": "muted",
+      "style": "image",
+      "eyebrow": "Self-paced modules",
+      "title": "Short courses you can do on a Saturday morning",
+      "subtitle": "Each module is structured as 4–6 short videos, a downloadable reader, and a self-check exercise. No fees. No certifications. Just better practice.",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Systems Thinking in Governance",
+          "subtitle": "5 modules · ~3 hours",
+          "category": "Foundations",
+          "description": "How to see a public problem as a system — with feedback loops, delays, and unintended consequences — and design interventions that account for the whole.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        },
+        {
+          "title": "Design Thinking for Public Services",
+          "subtitle": "4 modules · ~2.5 hours",
+          "category": "Service Design",
+          "description": "How to design public services that start with the citizen's day — with case studies from grievance, ration, and certificate services.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        },
+        {
+          "title": "Ethical Public Leadership",
+          "subtitle": "6 modules · ~4 hours",
+          "category": "Ethics",
+          "description": "Frameworks, codes, and case studies on the everyday dilemmas of public service. With reflections from serving and retired senior officers.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        },
+        {
+          "title": "Citizen Charters that Work",
+          "subtitle": "3 modules · ~2 hours",
+          "category": "Service Delivery",
+          "description": "How to design, publish and enforce a citizen charter — with templates, SLAs, and redressal flows.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        },
+        {
+          "title": "Data for Public Decisions",
+          "subtitle": "4 modules · ~3 hours",
+          "category": "Data & Analytics",
+          "description": "From dashboards to decisions — designing data products that actually shape weekly review meetings, not just annual reports.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        },
+        {
+          "title": "Disaster Preparedness for Districts",
+          "subtitle": "5 modules · ~3.5 hours",
+          "category": "Crisis Management",
+          "description": "Pre-positioning, command rooms, citizen communication, and lessons from Kerala Rescue and Covid Jagrata.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Start module", "link": "contact.html" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "webinars",
+      "eyebrow": "Live Webinars",
+      "title": "Upcoming sessions",
+      "subtitle": "Live, practitioner-led, recorded for later. Register through the form on each session.",
+      "columns": 2,
+      "items": [
+        { "icon": "🟢", "title": "The first 90 days as a district officer", "description": "What to read, who to meet, what to fix first — drawn from senior officers' first-quarter playbooks.", "cta": { "text": "Register", "link": "contact.html" } },
+        { "icon": "🟢", "title": "Designing a citizen charter that closes loops", "description": "A working session on writing a department charter with SLAs, redressal flows and review cadence.", "cta": { "text": "Register", "link": "contact.html" } },
+        { "icon": "🟢", "title": "Convergence in a district — a practical clinic", "description": "How to align health, education and livelihood programmes at the same address — with case examples." , "cta": { "text": "Register", "link": "contact.html" } },
+        { "icon": "🟢", "title": "Public communication for officers", "description": "What to say, when to say it, and the difference between communication and PR." , "cta": { "text": "Register", "link": "contact.html" } }
+      ]
+    },
+    {
+      "type": "two-column",
+      "eyebrow": "Mentorship",
+      "title": "Mentorship by peer officers and senior practitioners",
+      "imagePosition": "left",
+      "body": [
+        "The Mentorship Programme matches a mentee — a junior officer, a fellow, an intern, or a civil-society practitioner — with a senior who has done the work. Six conversations, six weeks, real momentum.",
+        "Mentors are serving and retired officers, programme leads, and senior academics. The matching is by topic, geography and stage of career."
+      ],
+      "bullets": [
+        "Six 1:1 conversations over six weeks",
+        "Structured around the mentee's actual work, not generic curriculum",
+        "Confidential, free, peer-driven",
+        "Open to officers, fellows, interns and civil-society practitioners"
+      ],
+      "cta": { "text": "Apply for mentorship", "link": "contact.html" },
+      "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Mentor and mentee in conversation"
+    },
+    {
+      "type": "callout",
+      "tone": "warm",
+      "icon": "🎓",
+      "title": "Want to mentor or teach a module?",
+      "body": "Surajyapatham is built on practitioner generosity. If you have a topic you've lived and want to share, write to us — we'll help you shape it into a module or mentorship slot."
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Next steps",
+      "title": "Pick one module. Block ninety minutes. Begin.",
+      "subtitle": "The hardest part is not starting. Pick a module that maps to a decision you'll make next quarter — and start there.",
+      "cta": { "text": "Browse modules", "link": "#modules" }
+    }
+  ]
+}

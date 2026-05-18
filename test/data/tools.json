@@ -1,0 +1,145 @@
+{
+  "meta": { "title": "Tools & Templates for Government — Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split",
+      "eyebrow": "Tools & Templates",
+      "title": "Practical instruments for the officer who has to <span class='text-saffron-600'>ship the next quarter</span>.",
+      "subtitle": "Planning frameworks, disaster toolkits, and monitoring tools — each designed for adoption, not admiration. Use them, adapt them, share back what you learnt.",
+      "primaryCta":   { "text": "Planning tools",     "link": "#planning" },
+      "secondaryCta": { "text": "Disaster toolkits", "link": "#disaster" },
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=70",
+      "imageAlt": "Officers reviewing planning templates on a table"
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "How to use these tools",
+      "title": "Adapt first, adopt later.",
+      "body": [
+        "Every template here is field-tested but locally adapted before it works for you. We recommend three steps: read the design notes, run a one-week pilot with a single team, and only then institutionalise.",
+        "If you can't find the toolkit you need — write to us. Where we have it, we'll share. Where we don't, we'll help you draft one."
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "planning",
+      "background": "muted",
+      "eyebrow": "Planning Tools",
+      "title": "From idea to implementation plan",
+      "subtitle": "The everyday toolkit for designing public-sector initiatives that can actually be delivered.",
+      "columns": 2,
+      "items": [
+        {
+          "icon": "📐",
+          "title": "Model Project Template",
+          "description": "A structured project canvas with built-in evaluation metrics, risk register, and stakeholder map. Used as the first artefact in every new initiative — before the procurement, before the launch.",
+          "tags": ["planning", "evaluation"],
+          "cta": { "text": "Request template", "link": "contact.html" }
+        },
+        {
+          "icon": "🚀",
+          "title": "Mission Mode Framework",
+          "description": "Go/no-go criteria, mission leader job description, cross-functional team composition, and the cadence that turns a department goal into a time-bound mission.",
+          "tags": ["mission mode", "cross-functional"],
+          "cta": { "text": "Request framework", "link": "contact.html" }
+        },
+        {
+          "icon": "📊",
+          "title": "Real-Time Governance Tracker",
+          "description": "A dashboard template (Power BI / Google Sheets) for tracking scheme performance at district and panchayat level. Includes definitions and refresh-cadence guidance.",
+          "tags": ["dashboards", "monitoring"],
+          "cta": { "text": "Request template", "link": "contact.html" }
+        },
+        {
+          "icon": "📜",
+          "title": "Citizen Charter Generator",
+          "description": "Department-by-department citizen charter starter pack — with SLA defaults, redressal flow, and a structure for public publication. Designed to be short enough to actually be read.",
+          "tags": ["charters", "service delivery"],
+          "cta": { "text": "Request generator", "link": "contact.html" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "disaster",
+      "eyebrow": "Disaster Response Toolkits",
+      "title": "Don't improvise — pre-position",
+      "subtitle": "Toolkits derived from Kerala Rescue, Covid Jagrata and other field operations — to be adapted, drilled, and made local.",
+      "columns": 3,
+      "items": [
+        {
+          "icon": "🌊",
+          "title": "Kerala Rescue ops framework",
+          "description": "Volunteer engineering pod, moderation desk, SOS triage and camp coordination playbook — derived from the 2018 floods.",
+          "cta": { "text": "Read the case study", "link": "case-studies.html?slug=kerala-rescue" }
+        },
+        {
+          "icon": "🦠",
+          "title": "Covid Jagrata model protocol",
+          "description": "Integrated public-health command stack — testing, quarantine, hospital bed and vaccine modules — with Reverse Quarantine playbook.",
+          "cta": { "text": "Read the case study", "link": "case-studies.html?slug=covid-jagrata" }
+        },
+        {
+          "icon": "🚨",
+          "title": "Emergency incident response SOPs",
+          "description": "Generic incident response SOPs — activation, roles, decision rights, and communication patterns — adaptable to fire, flood, accident, communal.",
+          "cta": { "text": "Request SOP pack", "link": "contact.html" }
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "monitoring",
+      "background": "muted",
+      "eyebrow": "Monitoring & Collaboration",
+      "title": "The cadence is the system",
+      "subtitle": "Tools for keeping departments and field teams accountable to each other, week after week.",
+      "columns": 3,
+      "items": [
+        {
+          "icon": "📡",
+          "title": "e-Dooth field coordination model",
+          "description": "A simple field-officer coordination protocol — beat plans, daily standups, weekly aggregation — for any cadre with a geographically dispersed footprint.",
+          "cta": { "text": "Request kit", "link": "contact.html" }
+        },
+        {
+          "icon": "🧠",
+          "title": "SDOT optimisation toolkit",
+          "description": "Service delivery optimisation toolkit — for diagnosing bottlenecks, redesigning queues, and reducing citizen wait time at high-traffic offices.",
+          "cta": { "text": "Request toolkit", "link": "contact.html" }
+        },
+        {
+          "icon": "🏛",
+          "title": "Panchayat & district dashboards",
+          "description": "Indicator definitions, refresh cadence, and review-meeting templates for panchayat-level and district-level governance dashboards.",
+          "cta": { "text": "Request kit", "link": "contact.html" }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warm",
+      "icon": "🛠",
+      "title": "Have a tool to share?",
+      "body": "If you've built or used a tool that works in the field, we'd love to publish it (with credit). Surajyapatham is a library, not a library card — the value compounds when officers share what they have built."
+    },
+    {
+      "type": "accordion",
+      "eyebrow": "Frequently asked",
+      "title": "Using these tools in your district",
+      "items": [
+        { "question": "Are these tools free to use?", "answer": "Yes. Every template on Surajyapatham is free to use and adapt for public-sector work. Where appropriate, we ask for attribution and a learning-back loop." },
+        { "question": "Can I get help adapting a tool to my context?", "answer": "Yes — write to us through the Contact page. We try to match officers with peers who have used the same tool, or with the original team where possible." },
+        { "question": "Do you certify or train officers in these tools?", "answer": "Some tools have associated training modules in the Learning Hub. For others, we run on-request webinars and peer-mentoring sessions." }
+      ]
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Tailored support",
+      "title": "Need a toolkit built for your district?",
+      "subtitle": "Tell us the problem you are trying to solve — we'll either point you to an existing toolkit, or help you co-create one.",
+      "cta": { "text": "Request a toolkit", "link": "contact.html" }
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Surajyapatham — Reimagining Citizen-Centric Governance"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split",
+      "eyebrow": "Reimagining Citizen-Centric Governance",
+      "title": "Good governance begins with <span class='text-saffron-600'>good intentions</span> — but thrives through <span class='text-brand-700 dark:text-brand-400'>better practices</span>.",
+      "subtitle": "Surajyapatham is a platform to sensitize and inspire citizens, public servants, and governance innovators — built on the belief that informed citizens and ethical public service together sustain trust and dignity.",
+      "tagline": "Good governance is built on informed citizens, ethical public service and practices that sustain trust and dignity.",
+      "primaryCta":   { "text": "Explore case studies", "link": "case-studies.html" },
+      "secondaryCta": { "text": "What we stand for",    "link": "about.html" },
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=70",
+      "imageAlt": "Indian Parliament building at golden hour",
+      "stats": [
+        { "value": 25,  "label": "Field-tested case studies" },
+        { "value": 9,   "label": "Knowledge domains" },
+        { "value": 100, "label": "Citizens reached (lakhs)" }
+      ]
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "Why Surajyapatham",
+      "title": "A platform for the demand side and the supply side of governance.",
+      "body": [
+        "A developed society is not defined by economic prosperity alone. It is built on empowered citizens, transparent institutions, and a governance system that enables people to interact with government, businesses, and one another with dignity, trust, and ease.",
+        "Today, two parallel challenges stand before us — empowering citizens with awareness of what they can rightfully expect, and reorienting public servants towards the true essence of governance: empathy, integrity, and purposeful public action."
+      ]
+    },
+    {
+      "type": "cards",
+      "style": "audience",
+      "background": "muted",
+      "eyebrow": "What you'll find here",
+      "title": "Built for every stakeholder in governance",
+      "subtitle": "Whether you read the Constitution as a citizen, implement policy as a public servant, or shape ideas as a researcher — Surajyapatham meets you where you are.",
+      "columns": 4,
+      "items": [
+        {
+          "icon": "👥",
+          "title": "For Citizens",
+          "bullets": [
+            "Sensitization on rights in a democracy",
+            "What to expect from a well-governed society",
+            "Simple tools to understand, engage, and participate"
+          ],
+          "cta": { "text": "Visit Citizen Hub", "link": "citizen-hub.html" }
+        },
+        {
+          "icon": "🏛",
+          "title": "For Public Servants",
+          "bullets": [
+            "Insights on citizen-centric, ethical governance",
+            "Frameworks for transforming service delivery",
+            "Practical, adaptable, implementable models"
+          ],
+          "cta": { "text": "Explore Foundations", "link": "governance.html" }
+        },
+        {
+          "icon": "🔬",
+          "title": "For Researchers",
+          "bullets": [
+            "Public policy and institutional transformation",
+            "Systems thinking in governance",
+            "Case studies and impact research"
+          ],
+          "cta": { "text": "Browse Knowledge", "link": "knowledge.html" }
+        },
+        {
+          "icon": "💡",
+          "title": "For Innovators",
+          "bullets": [
+            "A collaborative space for ideation",
+            "Inspiration from transformative initiatives",
+            "Opportunities to contribute solutions"
+          ],
+          "cta": { "text": "See Innovations", "link": "knowledge.html#innovation" }
+        }
+      ]
+    },
+    {
+      "type": "spotlight",
+      "eyebrow": "Spotlight Stories",
+      "title": "Short, simple, relatable stories that inspire confidence.",
+      "subtitle": "From an everyday citizen who reshaped her ward, to officers who set the bar for ethical service.",
+      "viewAll": { "text": "All spotlights", "link": "knowledge.html" },
+      "items": [
+        {
+          "id": "citizen-who-made-a-difference",
+          "label": "Citizen Story",
+          "tone": "citizen",
+          "title": "The citizen who made a difference",
+          "description": "How one ward-sabha attendee turned a forgotten road project into a model of participatory planning — and a 90-day delivery.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read the story", "link": "knowledge.html" },
+          "link": "knowledge.html"
+        },
+        {
+          "id": "innovation-that-changed-lives",
+          "label": "Innovation",
+          "tone": "innovation",
+          "title": "An idea that quietly changed lives",
+          "description": "How a simple WhatsApp-based escalation protocol cut grievance resolution time at a district office from 21 days to 96 hours.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "See the model", "link": "case-studies.html?slug=oppam" },
+          "link": "case-studies.html?slug=oppam"
+        },
+        {
+          "id": "sr-sankaran-ias",
+          "label": "Public Servant",
+          "tone": "public-servant",
+          "title": "S. R. Sankaran — a life of justice",
+          "description": "An exemplary IAS officer who set the standard for integrity, compassion and dedication to the most marginalised. Featured in The Better India.",
+          "attribution": "Featured in The Better India",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1531538512164-e6c51ea63d20?auto=format&fit=crop&w=900&q=70" },
+          "cta": { "text": "Read the profile", "link": "https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/" },
+          "link": "https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/"
+        }
+      ]
+    },
+    {
+      "type": "pillars",
+      "eyebrow": "The five pillars",
+      "title": "Foundations of good governance",
+      "subtitle": "Five values that turn intent into outcomes — and citizens into stakeholders.",
+      "items": [
+        { "icon": "🔍", "title": "Transparency",   "description": "Information that citizens can find, follow, and trust — from budgets to file movements." },
+        { "icon": "🕊", "title": "Dignity",         "description": "Every interaction with the state must affirm — not diminish — the citizen's standing." },
+        { "icon": "🤝", "title": "Inclusion",       "description": "Service that reaches the last person first, and designs for those most likely to be left out." },
+        { "icon": "📊", "title": "Accountability",  "description": "Clear ownership, measurable outcomes, and consequences when promises slip." },
+        { "icon": "⚖",  "title": "Fairness",        "description": "Rules that apply evenly, processes that treat the powerful and the powerless alike." },
+        { "icon": "💚", "title": "Sustainability",  "description": "Decisions today that leave the institutions, environment and communities of tomorrow intact." }
+      ]
+    },
+    {
+      "type": "cards",
+      "style": "image",
+      "eyebrow": "Governance in Action",
+      "title": "Featured case studies",
+      "subtitle": "Real initiatives, real impact — citizen summaries and detailed officer playbooks for each.",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Ente Bhoomi & ILIMS",
+          "subtitle": "Kerala — Digital land records",
+          "category": "Digital Governance",
+          "description": "Bringing 30 million land parcels into a unified, citizen-facing digital land information system.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=900&q=70" },
+          "link": "case-studies.html?slug=ente-bhoomi",
+          "cta": { "text": "Read case study", "link": "case-studies.html?slug=ente-bhoomi" }
+        },
+        {
+          "title": "Kerala Rescue",
+          "subtitle": "Kerala — 2018 floods response",
+          "category": "Disaster Response",
+          "description": "A real-time, crowd-sourced rescue coordination platform that turned every smartphone into a relief node.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=70" },
+          "link": "case-studies.html?slug=kerala-rescue",
+          "cta": { "text": "Read case study", "link": "case-studies.html?slug=kerala-rescue" }
+        },
+        {
+          "title": "Covid Jagrata",
+          "subtitle": "Kerala — Pandemic command system",
+          "category": "Digital Governance",
+          "description": "An integrated digital backbone that tracked 80+ million people, vaccinations, beds and supply lines through the pandemic.",
+          "images": { "thumbnail": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=900&q=70" },
+          "link": "case-studies.html?slug=covid-jagrata",
+          "cta": { "text": "Read case study", "link": "case-studies.html?slug=covid-jagrata" }
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "eyebrow": "Citizen Empowerment",
+      "title": "Know what to expect. Know how to ask. Know how to participate.",
+      "body": [
+        "The strongest demand for good governance comes from informed citizens. Surajyapatham translates rights, processes and grievance mechanisms into language anyone can understand — and act on.",
+        "From ward sabhas to certificate timelines, learn what 'good service' actually looks like — and what to do when it isn't delivered."
+      ],
+      "bullets": [
+        "Simple guides on everyday rights (land, certificates, welfare, health)",
+        "How to attend ward sabhas and influence local plans",
+        "Step-by-step grievance redressal flows",
+        "Easy explainers on file movement, certificates, and applications"
+      ],
+      "cta": { "text": "Visit the Citizen Hub", "link": "citizen-hub.html" },
+      "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Citizens at a community meeting"
+    },
+    {
+      "type": "two-column",
+      "eyebrow": "For Public Servants",
+      "title": "Ethical, citizen-centric, outcome-driven — without re-inventing the wheel.",
+      "imagePosition": "left",
+      "body": [
+        "Every model on Surajyapatham comes with a replication toolkit: the design assumptions, the staff structure, the procurement notes, the dashboards, and the politics of getting it done.",
+        "From mission-mode reforms to citizen charters, the tools are written for the officer who needs to ship the next quarter — not just describe the ideal state."
+      ],
+      "bullets": [
+        "Mission Mode Framework with go/no-go criteria",
+        "Citizen Charter Generator with SLA defaults",
+        "Real-Time Governance Tracker template",
+        "Disaster response SOPs and incident playbooks"
+      ],
+      "cta": { "text": "Browse tools & templates", "link": "tools.html" },
+      "image": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Officer reviewing field data on a dashboard"
+    },
+    {
+      "type": "cards",
+      "background": "muted",
+      "eyebrow": "Knowledge Centre",
+      "title": "Deep reads for serious practitioners",
+      "subtitle": "Innovation digests, playbooks, expert columns and whitepapers — curated for those building the next decade of public administration.",
+      "columns": 4,
+      "items": [
+        { "icon": "📰", "title": "Innovation Digest", "description": "Top 10 governance innovations across India and the world, every month.", "link": "knowledge.html", "cta": { "text": "Read latest" } },
+        { "icon": "📚", "title": "Playbooks",         "description": "Implementation-ready manuals — from grievance redressal to extreme-poverty eradication.", "link": "knowledge.html" },
+        { "icon": "✍",  "title": "Expert Columns",    "description": "Insights from senior officers, academics, and domain experts — written for the field.", "link": "knowledge.html" },
+        { "icon": "📑", "title": "Whitepapers",       "description": "Evidence-backed publications and policy briefs you can cite.", "link": "knowledge.html" }
+      ]
+    },
+    {
+      "type": "pull-quote",
+      "quote": "Governance is not a transaction. It is a relationship between the state and the citizen — and like every relationship, it depends on trust, attention, and the willingness to listen.",
+      "attribution": "Founder's note"
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Join the movement",
+      "title": "Strengthen governance from both sides.",
+      "subtitle": "Whether you are a citizen with a question, an officer with a model to share, or a researcher with a perspective — there is a place for you here.",
+      "cta": { "text": "Get in touch", "link": "contact.html" }
+    }
+  ]
+}

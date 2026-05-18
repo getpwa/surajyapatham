@@ -1,0 +1,103 @@
+{
+  "id": "ehealth",
+  "slug": "ehealth",
+  "title": "eHealth Kerala",
+  "subtitle": "A unified electronic health record platform across primary, secondary and tertiary public health facilities — built to follow the patient, not the paperwork.",
+  "category": "Digital Governance",
+  "location": "Kerala",
+  "tags": ["health", "EHR", "digital health", "primary care"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1200&q=70", "alt": "Doctor at a digital workstation", "caption": "OPD time spent on listening, not on typing." },
+      { "src": "https://images.unsplash.com/photo-1583912267550-d97e6a734f2b?auto=format&fit=crop&w=1200&q=70", "alt": "Health worker at a PHC", "caption": "PHC records connected to district hospitals." },
+      { "src": "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=1200&q=70", "alt": "Lab results screen", "caption": "Test results follow the patient, not the file." },
+      { "src": "https://images.unsplash.com/photo-1605288605040-c8c1ab1ac2b1?auto=format&fit=crop&w=1200&q=70", "alt": "Patient at consultation", "caption": "A single record across PHC, district and medical college." }
+    ]
+  },
+  "stats": [
+    { "value": "1,200+", "label": "Public facilities live" },
+    { "value": "60M+", "label": "Patient records active" },
+    { "value": "40%", "label": "OPD time saved per visit" },
+    { "value": "1", "label": "Unified record across PHC → tertiary" }
+  ],
+  "citizen": {
+    "summary": "Going to a public hospital used to mean carrying a folder of prescriptions, scans and lab reports — and explaining your entire history from scratch every time. eHealth Kerala builds a single record that follows you across PHCs, district hospitals and medical colleges, so the doctor in front of you knows what the last one prescribed.",
+    "story": [
+      "For Mariam, managing her father's diabetes used to mean three folders, two hospitals, and a stack of duplicated tests. With eHealth, his records show up wherever he is seen — including the medical college where he was eventually referred.",
+      "More than the convenience, the platform reduces medical error. A doctor in a district hospital can see the medication trail and avoid prescribing what didn't work or what interacts badly. The state, in turn, gets to see disease patterns it could only have guessed at before."
+    ],
+    "changes": [
+      "Your medical history is available at every public health facility you visit — without you having to carry paper.",
+      "Test results, prescriptions and discharge summaries follow you, including across PHC, district and tertiary care.",
+      "Doctors spend less time scribbling, more time examining and explaining.",
+      "Public health programmes (TB, NCD, maternal) now run on the same record as your acute-care visits."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "eHealth Kerala began as a state-led initiative to put OPD registration, billing and prescribing into a single open-source platform — and grew into a comprehensive EHR that connects the primary health centre to the medical college.",
+      "Architecturally, it is built on OpenMRS and other open-source components, with strong attention to interoperability and citizen consent. Functionally, it is built on the discipline of incremental roll-out: one module at a time, one type of facility at a time.",
+      "By the time of the pandemic, eHealth was the substrate that Covid Jagrata's clinical modules ran on top of — a quiet demonstration that long-horizon digital public health investment pays off precisely when emergencies make it impossible to build from scratch."
+    ],
+    "challenges": [
+      { "title": "Doctor adoption", "description": "Clinical workflows are unforgiving. Any system that adds friction to the OPD bench will be abandoned by lunch. Continuous co-design with clinicians was non-negotiable." },
+      { "title": "Connectivity at PHC level", "description": "Many primary facilities work in low-bandwidth conditions. Offline-tolerant clients and edge servers were essential to avoid excluding the smallest facilities." },
+      { "title": "Privacy and consent", "description": "Health records are sensitive. Purpose-limited access, audit logs, and explicit consent for cross-facility sharing were built in from the start." },
+      { "title": "Integration with vertical programmes", "description": "TB, leprosy, NCD and maternal health programmes had their own legacy registers. Migrating them to eHealth without disrupting reporting required staged interface work." }
+    ],
+    "actions": [
+      "Adopted OpenMRS as the core EHR platform, extended with Kerala-specific clinical and administrative modules.",
+      "Rolled out by facility type: medical colleges first (high capacity), then district hospitals, then PHCs.",
+      "Established a clinician co-design cell with rotating clinical fellows to keep workflows realistic.",
+      "Built offline-tolerant clients with edge servers for low-bandwidth PHCs.",
+      "Implemented explicit consent flows and tamper-evident audit logs for all cross-facility access.",
+      "Integrated vertical public health programmes (TB, NCD, maternal/child health) into the same record."
+    ],
+    "technology": [
+      "OpenMRS-based EHR with Kerala-specific modules",
+      "FHIR-compatible APIs for inter-facility and inter-state interoperability",
+      "Offline-tolerant clinical clients with conflict-free sync",
+      "PostgreSQL with row-level access control and audit logs",
+      "Aadhaar-optional patient identification (with alternative ID flows)",
+      "Public dashboards for service-level indicators (waiting time, OPD load)"
+    ],
+    "outcomes": [
+      "Over 1,200 public health facilities live on eHealth across the state.",
+      "Over 60 million patient records active, with cross-facility lookup at PHC → tertiary.",
+      "OPD consultation time reduced by an estimated 40% per visit (median across pilot facilities).",
+      "Adverse drug interactions caught earlier, especially in chronic-care patients.",
+      "eHealth substrate enabled rapid clinical roll-out during the pandemic — and supports current TB, NCD and maternal programmes."
+    ],
+    "processFlow": [
+      { "title": "1. Patient registration", "description": "Single patient ID generated; existing records (if any) auto-linked with consent." },
+      { "title": "2. OPD workflow", "description": "Clinician sees history, prescribes, orders tests on the platform; printable summaries available." },
+      { "title": "3. Labs and pharmacy", "description": "Connected lab and pharmacy modules — results and dispensing in the same record." },
+      { "title": "4. Referrals", "description": "Higher-tier facilities receive the patient with the record intact — no re-explanation required." },
+      { "title": "5. Public health linkage", "description": "TB, NCD, maternal/child indicators auto-populated; vertical programmes consume the same record." },
+      { "title": "6. Audit and learning", "description": "De-identified analytics drive epidemiology, OPD redesign and procurement decisions." }
+    ],
+    "replicationToolkit": [
+      "OpenMRS-based reference architecture document",
+      "Clinician co-design cell charter and operating model",
+      "Offline-tolerant client deployment runbook",
+      "Consent and audit policy templates",
+      "Vertical programme integration playbook (TB / NCD / maternal)",
+      "Service-level dashboard definitions"
+    ]
+  },
+  "timeline": [
+    { "date": "Phase 1", "title": "Medical college pilots", "description": "OPD registration, billing and prescribing rolled out at tertiary facilities." },
+    { "date": "Phase 2", "title": "District hospitals onboard", "description": "Referrals across tertiary and secondary care begin to work in a single record." },
+    { "date": "Phase 3", "title": "PHC roll-out", "description": "Offline-tolerant clients deployed; PHCs connected with edge sync servers." },
+    { "date": "2020", "title": "Covid use", "description": "eHealth substrate supports rapid clinical roll-out during the pandemic via Covid Jagrata modules." },
+    { "date": "Ongoing", "title": "Vertical programme integration", "description": "TB, NCD and maternal/child health programmes brought onto the same record." }
+  ],
+  "downloads": [
+    { "title": "eHealth architecture overview", "type": "PDF · 48 pages", "icon": "🧩", "link": "contact.html" },
+    { "title": "Clinician co-design playbook", "type": "PDF · 18 pages", "icon": "👩‍⚕️", "link": "contact.html" },
+    { "title": "Offline client deployment runbook", "type": "PDF · 22 pages", "icon": "🛠", "link": "contact.html" },
+    { "title": "Consent & audit policies", "type": "DOCX · template pack", "icon": "🔐", "link": "contact.html" }
+  ]
+}

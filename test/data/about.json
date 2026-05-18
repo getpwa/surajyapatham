@@ -1,0 +1,104 @@
+{
+  "meta": { "title": "About Surajyapatham" },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "centered",
+      "eyebrow": "About Surajyapatham",
+      "title": "Bridging the citizen and the state — one principle, one practice at a time.",
+      "subtitle": "Surajyapatham is a platform dedicated to helping citizens understand governance better, and helping public servants deliver governance more effectively and empathetically.",
+      "primaryCta":   { "text": "Read our mission",  "link": "#mission" },
+      "secondaryCta": { "text": "Founder's message", "link": "#founder" }
+    },
+    {
+      "type": "rich-text",
+      "eyebrow": "The premise",
+      "title": "A developed society is not defined by economic prosperity alone.",
+      "body": [
+        "It is built on empowered citizens, transparent institutions, and a governance system that enables people to interact with government, businesses, and one another with dignity, trust, and ease.",
+        "When governance lacks transparency, accountability, and responsiveness, development slows and public trust in institutions gradually weakens. As India aspires to become a developed nation, what it needs is not merely governance in form, but good governance in both letter and spirit.",
+        "In a democracy, good governance flourishes only when citizens and public servants clearly understand their respective roles and responsibilities."
+      ]
+    },
+    {
+      "type": "pillars",
+      "eyebrow": "Two parallel challenges",
+      "title": "What stands before us today",
+      "subtitle": "Empowerment on one side. Reorientation on the other. Surajyapatham works on both.",
+      "items": [
+        {
+          "icon": "📣",
+          "title": "Empowering citizens",
+          "description": "A growing necessity to make citizens aware of what they can rightfully expect from public institutions — dignity, transparency, fairness, accountability, and timely service delivery."
+        },
+        {
+          "icon": "🧭",
+          "title": "Reorienting public servants",
+          "description": "An equally important need to reorient public servants towards the true essence of governance — empathy, integrity, responsiveness, ethical leadership, and purposeful public action."
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "id": "mission",
+      "eyebrow": "Our mission",
+      "title": "To foster a culture of honest, empathetic, and outcome-driven governance.",
+      "body": [
+        "Surajyapatham brings together ideas, practices, and people to strengthen governance from both the demand side (citizens) and the supply side (public institutions).",
+        "We don't believe in critique without remedy. Every problem we surface comes with practitioners, frameworks, and field-tested paths forward."
+      ],
+      "bullets": [
+        "Explore the core dimensions of good governance through explainers and analysis",
+        "Convert proven innovations into scalable and adaptable models",
+        "Document field-tested solutions and administrative innovations",
+        "Build a collaborative ecosystem of citizens, officers, experts, and innovators",
+        "Provide practical tools and frameworks for planning and service delivery"
+      ],
+      "cta": { "text": "See how we help", "link": "#how" },
+      "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1100&q=70",
+      "imageAlt": "Public servants collaborating around a table"
+    },
+    {
+      "type": "cards",
+      "id": "how",
+      "background": "muted",
+      "eyebrow": "How Surajyapatham helps",
+      "title": "Five ways we move the needle",
+      "columns": 3,
+      "items": [
+        { "icon": "🔎", "title": "Explainers & analysis", "description": "Core dimensions of good governance — explained simply for citizens, analytically for practitioners." },
+        { "icon": "🔁", "title": "Scalable models",        "description": "Proven innovations converted into adaptable models that can be implemented elsewhere." },
+        { "icon": "📖", "title": "Documentation",          "description": "Field-tested solutions and administrative innovations, written as honest case studies — not press releases." },
+        { "icon": "🌐", "title": "Collaborative ecosystem","description": "A space where citizens, public servants, experts, and innovators learn from one another." },
+        { "icon": "🛠",  "title": "Tools & frameworks",     "description": "Practical instruments for planning, monitoring, service delivery, and informed decision-making." },
+        { "icon": "🎓", "title": "Learning & mentorship",   "description": "Self-paced modules, live webinars, and peer mentorship — for officers and civil society alike." }
+      ]
+    },
+    {
+      "type": "two-column",
+      "id": "founder",
+      "eyebrow": "Founder's Message",
+      "title": "Service is the form. Empathy is the substance.",
+      "imagePosition": "left",
+      "body": [
+        "I have spent the better part of my career inside the public administration system. I have seen what is possible when institutions, intent and individuals align — and what fails when any one is missing.",
+        "Surajyapatham is rooted in a simple belief: that governance can transform lives when principles turn into practice. That every form a citizen fills out is an act of trust. That every officer who answers honestly is keeping a quiet promise.",
+        "This is not a platform of critique. It is a platform of construction — and an invitation to anyone who believes that the work of building a developed society is not finished, and is everyone's to do."
+      ],
+      "image": "assets/images/spotlights/me.webp",
+      "imageAlt": "Founder portrait silhouette"
+    },
+    {
+      "type": "pull-quote",
+      "quote": "Governance can transform lives when principles turn into practice.",
+      "attribution": "Surajyapatham"
+    },
+    {
+      "type": "cta-banner",
+      "eyebrow": "Partner with us",
+      "title": "Let's build the next decade of citizen-centric governance — together.",
+      "subtitle": "Citizens, officers, researchers, institutions and innovators — we want to hear from you.",
+      "cta": { "text": "Get in touch", "link": "contact.html" }
+    }
+  ]
+}

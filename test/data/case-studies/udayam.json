@@ -1,0 +1,101 @@
+{
+  "id": "udayam",
+  "slug": "udayam",
+  "title": "Udayam — Housing the Homeless",
+  "subtitle": "An equity-driven housing programme that combined dignity, design and decentralised delivery — and refused to confuse a house with a home.",
+  "category": "Social Equity",
+  "location": "Kerala",
+  "tags": ["housing", "equity", "inclusion", "local self-government"],
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=75",
+    "thumbnail": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=70",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=70", "alt": "Newly built Udayam house", "caption": "A house is the floor. A home is the surrounding services." },
+      { "src": "https://images.unsplash.com/photo-1481026469463-66327c86e544?auto=format&fit=crop&w=1200&q=70", "alt": "Family at home", "caption": "Beneficiary selection co-designed with the ward sabha." },
+      { "src": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=70", "alt": "Local masons at work", "caption": "Local masonry training built skills and incomes alongside houses." },
+      { "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=70", "alt": "Community gathering", "caption": "A house is delivered, but a community is what sustains it." }
+    ]
+  },
+  "stats": [
+    { "value": "1.2L+", "label": "Houses sanctioned" },
+    { "value": "₹4L+", "label": "Average per-house investment" },
+    { "value": "78%", "label": "Beneficiaries from SC/ST/marginalised" },
+    { "value": "100%", "label": "Title in woman's name" }
+  ],
+  "citizen": {
+    "summary": "Udayam went beyond \"how many houses were built\" and asked \"is anyone still homeless\". For each family without a roof, it built a house — but it also tied them to ration cards, school enrolment, healthcare, and a community. The title to the house is in the woman of the household's name.",
+    "story": [
+      "For Saraswati, a daily-wage worker who had lived in temporary sheets for two decades, Udayam meant more than a built structure. It meant that a ward member showed up with paperwork, that the local engineer co-designed the layout with her, and that the certificate said her name.",
+      "Udayam treated housing as a doorway — to school enrolment for the kids, to a postal address, to dignity in interactions with banks and the state. That is the part of the programme that did not show up in the construction line-item."
+    ],
+    "changes": [
+      "Beneficiary lists were openly published and verified at the ward sabha — no surprises, fewer leakages.",
+      "Houses came with the household's identity papers, ration card and school enrolment sorted in parallel.",
+      "Local masons were trained and paid for the work — building incomes alongside infrastructure.",
+      "Titles were issued in the woman's name by default, strengthening intra-household equity."
+    ]
+  },
+  "officer": {
+    "overview": [
+      "Udayam was designed on a simple insight: the state already runs many programmes that touch the same poor household. Housing fails when it is delivered as an isolated brick-and-mortar project; it succeeds when it is the spine that aligns the rest of the welfare delivery to the same family.",
+      "Operationally, the programme combined a tight central design (eligibility, financial norms, design libraries) with strong decentralised delivery — the Local Self-Government Department (LSGD), Panchayats and ward sabhas drove implementation, beneficiary selection and quality assurance.",
+      "Across phases, Udayam's distinctiveness has been its insistence on equity by design: women's title, SC/ST/transgender priority, and convergence with health, education and livelihoods at the same address."
+    ],
+    "challenges": [
+      { "title": "Beneficiary selection without leakage", "description": "Every state housing programme suffers from elite capture and exclusion errors. Public ward-sabha verification and a published, appealable list became non-negotiable." },
+      { "title": "Land tenure for the truly landless", "description": "A house needs a plot. Programmes for the absolutely landless required state-land allotment, family-pattam reforms, and creative use of common land." },
+      { "title": "Convergence fatigue", "description": "Health, education and livelihood departments had their own priorities. Aligning them to the same household required relentless ward-level case management." },
+      { "title": "Quality vs. speed", "description": "Pressure to publish completion numbers can compromise build quality. Random third-party inspections and citizen sign-off were built in to resist that pressure." }
+    ],
+    "actions": [
+      "Created a single beneficiary database for housing-related schemes, with publishable lists at the ward level.",
+      "Mandated title in the woman of the household's name, with limited exceptions handled at the district level.",
+      "Built a regional design library (climate-zone appropriate) that beneficiaries could choose from with the local engineer.",
+      "Trained and certified local masons (women included) to do the work, financed through the housing budget.",
+      "Convergence trackers at the ward level: each Udayam household was tagged for ration, school, health, livelihood follow-through.",
+      "Third-party quality audits and citizen sign-off before final instalment release."
+    ],
+    "technology": [
+      "Beneficiary management system with ward-level publishing and grievance windows",
+      "Geo-tagged construction photographs at every milestone for audit",
+      "Convergence dashboard linking housing to ration, health and education records",
+      "Mobile-first reporting tools for ward members and engineers",
+      "Open data publishing of completion and pendency at panchayat level"
+    ],
+    "outcomes": [
+      "Over 1.2 lakh houses sanctioned across phases, with 78% of beneficiaries from SC/ST or other marginalised groups.",
+      "Every completed Udayam title issued in the woman of the household's name.",
+      "Local masonry employment grew significantly; women masons trained and deployed in several districts.",
+      "Beneficiary grievances at sanction stage fell sharply after public ward-sabha verification became standard.",
+      "Convergence with ration, school and livelihood programmes verifiably reached over 90% of completed households."
+    ],
+    "processFlow": [
+      { "title": "1. Demand identification", "description": "Ward-level survey of homeless / inadequately housed families, published for verification." },
+      { "title": "2. Public verification", "description": "Ward sabha reviews list; objections heard; final beneficiary list re-published." },
+      { "title": "3. Land and design", "description": "Plot secured (own / state / family pattam); design picked from regional library with local engineer." },
+      { "title": "4. Construction", "description": "Local masons execute; geo-tagged photos and instalment releases keyed to milestones." },
+      { "title": "5. Convergence", "description": "Ration, school, health and livelihood services linked to the address before handover." },
+      { "title": "6. Quality and handover", "description": "Third-party inspection; citizen sign-off; final instalment; title issued in the woman's name." }
+    ],
+    "replicationToolkit": [
+      "Ward-sabha beneficiary verification SOP",
+      "Regional design library (climate-appropriate house designs)",
+      "Local mason training curriculum and certification framework",
+      "Convergence tracker template (housing × ration × school × health × livelihood)",
+      "Third-party quality audit checklist and sign-off forms",
+      "Women's title issuance protocol and family exception rules"
+    ]
+  },
+  "timeline": [
+    { "date": "Phase I", "title": "Universalisation push", "description": "Programme launched with the goal of ending visible homelessness in the state; ward-level lists begin." },
+    { "date": "Phase II", "title": "Equity by design", "description": "Women's title default, SC/ST/transgender priority, and convergence tracker introduced." },
+    { "date": "Phase III", "title": "Quality and dignity", "description": "Regional design library, third-party audits and citizen sign-off institutionalised." },
+    { "date": "Ongoing", "title": "Beyond housing", "description": "Programme repositioned as a convergence engine — housing as the spine for whole-family welfare delivery." }
+  ],
+  "downloads": [
+    { "title": "Udayam programme document", "type": "PDF · 58 pages", "icon": "📘", "link": "contact.html" },
+    { "title": "Beneficiary verification SOP", "type": "PDF · 14 pages", "icon": "📋", "link": "contact.html" },
+    { "title": "Regional design library", "type": "ZIP · 28 designs", "icon": "🏠", "link": "contact.html" },
+    { "title": "Convergence tracker template", "type": "XLSX · template", "icon": "📊", "link": "contact.html" }
+  ]
+}
