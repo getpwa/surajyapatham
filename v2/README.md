@@ -24,7 +24,7 @@ Static site: HTML5, Bootstrap 5.3, Bootstrap Icons, Swiper (homepage slider). No
 3. New photos: put an Unsplash URL in the JSON and run `python3 _src/fetch_images.py` (saves local copies to `assets/img/photos/`).
 4. Checks: `python3 _src/check.py` (links, anchors, images, emails) and `python3 _src/coverage.py` (every JSON text appears on its page).
 
-Contact email everywhere: **surajyapatham@gmail.com** (set as `EMAIL` in `_src/build.py`).
+Contact email everywhere: **we4samatvam@gmail.com** (set as `EMAIL` in `_src/build.py`).
 
 ## Deploying
 Upload everything **except** `_src/` and `README.md` to any static host (Netlify, GitHub Pages, cPanel, S3).

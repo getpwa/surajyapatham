@@ -1107,3 +1107,11 @@ em { font-style: italic; }
 .cinfo-row { grid-template-columns: 1.3fr 1fr 1fr; }
 .cinfo a, .cinfo div { word-break: normal; overflow-wrap: anywhere; font-size: .92rem; }
 @media (max-width: 767.98px) { .cinfo-row { grid-template-columns: 1fr; } }
+
+/* Logo: dedicated dark-theme artwork (replaces colour-inversion filters) */
+.brand img, .brand-img-sm, .footer-logo { filter: none !important; }
+.logo-d { display: none !important; }
+[data-bs-theme="dark"] .logo-l { display: none !important; }
+[data-bs-theme="dark"] .logo-d { display: inline-block !important; }
+.footer-logo { display: inline-block !important; opacity: 1; }
+.footer-logo { height: 56px !important; width: auto; }
