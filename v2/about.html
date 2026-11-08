@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Surajyapatham — Bridging the citizen and the state</title>
+  <meta name="description" content="Surajyapatham is a platform dedicated to helping citizens understand governance better, and helping public servants deliver governance more effectively and empathetically.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <script>
+    try { var t = localStorage.getItem('sp-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-bs-theme', t); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css?v=6" rel="stylesheet">
+</head>
+<body class="child-page">
+<!-- SP:HEADER -->
+<a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="utility-bar d-none d-md-block">
+  <div class="container-xl d-flex align-items-center justify-content-between">
+    <span><i class="bi bi-calendar3 me-2"></i><span id="today"></span></span>
+    <span class="utility-tag">Towards informed and empowered citizens · Responsive institutions · Better governance</span>
+    <a href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope me-1"></i>surajyapatham@gmail.com</a>
+  </div>
+</div>
+<header class="site-header" id="siteHeader">
+  <div class="container-xl">
+    <div class="header-row">
+      <button class="icon-btn d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      <a class="brand" href="index.html" aria-label="Surajyapatham home"><img src="assets/img/logo.png" alt="Surajyapatham — way to good governance" width="640" height="146"></a>
+      <nav class="main-nav d-none d-xl-flex" aria-label="Primary">
+        <a href="foundations.html" style="--c:var(--c-found)">Foundations</a><a href="case-studies.html" style="--c:var(--c-gia)">Case Studies</a><a href="citizen-hub.html" style="--c:var(--c-citizen)">Citizen Hub</a><a href="tools.html" style="--c:var(--c-tools)">Tools</a><a href="knowledge.html" style="--c:var(--c-know)">Knowledge</a><a href="learning.html" style="--c:var(--c-learn)">Learning</a><a href="about.html" class="active" aria-current="page">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" id="searchOpen" aria-label="Search (press /)"><i class="bi bi-search"></i></button>
+        <button class="icon-btn theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars icon-dark"></i><i class="bi bi-sun icon-light"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="offcanvas offcanvas-start mobile-nav" tabindex="-1" id="mobileNav" aria-label="Menu">
+  <div class="offcanvas-header">
+    <a href="index.html"><img src="assets/img/logo.png" alt="Surajyapatham" class="brand-img-sm"></a>
+    <button type="button" class="icon-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class="mobile-links"><a href="index.html"><span>Home</span><i class="bi bi-arrow-right"></i></a><a href="foundations.html" style=--c:var(--c-found)><span>Foundations</span><i class="bi bi-arrow-right"></i></a><a href="case-studies.html" style=--c:var(--c-gia)><span>Case Studies</span><i class="bi bi-arrow-right"></i></a><a href="citizen-hub.html" style=--c:var(--c-citizen)><span>Citizen Hub</span><i class="bi bi-arrow-right"></i></a><a href="tools.html" style=--c:var(--c-tools)><span>Tools</span><i class="bi bi-arrow-right"></i></a><a href="knowledge.html" style=--c:var(--c-know)><span>Knowledge</span><i class="bi bi-arrow-right"></i></a><a href="learning.html" style=--c:var(--c-learn)><span>Learning</span><i class="bi bi-arrow-right"></i></a><a href="about.html"><span>About</span><i class="bi bi-arrow-right"></i></a><a href="contact.html"><span>Contact</span><i class="bi bi-arrow-right"></i></a></nav>
+    <a class="btn-pill w-100 justify-content-center mt-4" href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope"></i> surajyapatham@gmail.com</a>
+  </div>
+</div>
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search" hidden>
+  <div class="container-xl">
+    <div class="search-top"><span class="eyebrow">Search Surajyapatham</span><button class="icon-btn" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button></div>
+    <label for="searchInput" class="visually-hidden">Search</label>
+    <input type="search" id="searchInput" class="search-input" placeholder="Rights, case studies, tools…" autocomplete="off">
+    <div class="search-suggest"><span>Try:</span><button type="button" data-q="Covid">Covid Jagrata</button><button type="button" data-q="rights">Rights</button><button type="button" data-q="grievance">Grievance</button><button type="button" data-q="mission">Mission mode</button></div>
+    <ul class="search-results" id="searchResults"></ul>
+  </div>
+</div>
+<!-- /SP:HEADER -->
+
+<main id="main" class="article-page">
+
+<!-- ============ ARTICLE HEADER ============ -->
+<header class="art-header">
+  <div class="container-xl">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><i class="bi bi-chevron-right"></i><a href="about.html">About</a><i class="bi bi-chevron-right"></i><span aria-current="page">About Surajyapatham</span>
+    </nav>
+    <div class="art-head-grid">
+      <div>
+        <span class="art-kicker">About Surajyapatham</span>
+        <h1 class="art-title">Bridging the citizen and the state — <em>one principle, one practice</em> at a time.</h1>
+      </div>
+      <div class="art-standfirst">
+        <p>Surajyapatham is a platform dedicated to helping citizens understand governance better, and helping public servants deliver governance more effectively and empathetically.</p>
+        <div class="page-actions">
+          <a href="#mission" class="btn-pill">Read our mission <i class="bi bi-arrow-right"></i></a>
+          <a href="#founder" class="btn-outline-ink">Founder’s message</a>
+        </div>
+      </div>
+    </div>
+    <div class="art-byline">
+      <span class="avatar-mini">S</span>
+      <span>By <strong>Surajyapatham</strong></span>
+      <span class="dot"></span><span>Updated 8 Nov 2026</span>
+      <span class="dot"></span><span><i class="bi bi-clock"></i> 5 min read</span>
+      <span class="art-share">
+        <a href="#" data-share="x" aria-label="Share on X"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" data-share="linkedin" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" data-share="whatsapp" aria-label="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" aria-label="Copy link" id="copyLink"><i class="bi bi-link-45deg"></i></a>
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="container-xl">
+  <figure class="art-lead">
+    <img src="assets/img/photos/1544027993-37dbfe43562a-lg.jpg" alt="Two hands reaching towards each other between concrete pillars">
+    <figcaption>The citizen and the state — two sides of one relationship.</figcaption>
+  </figure>
+
+  <div class="art-layout">
+
+    <!-- ============ ARTICLE BODY ============ -->
+    <article class="art-body">
+
+      <section id="premise">
+        <span class="sec-label">The Premise</span>
+        <h2>A developed society is not defined by economic prosperity alone.</h2>
+        <p class="dropcap">It is built on empowered citizens, transparent institutions, and a governance system that enables people to interact with government, businesses, and one another with dignity, trust, and ease.</p>
+        <p>When governance lacks transparency, accountability, and responsiveness, development slows and public trust in institutions gradually weakens. As India aspires to become a developed nation, what it needs is not merely governance in form, but good governance in both letter and spirit.</p>
+        <blockquote class="art-pull">In a democracy, good governance flourishes only when citizens and public servants clearly understand their respective roles and responsibilities.</blockquote>
+      </section>
+
+      <section id="challenges">
+        <span class="sec-label">Two Parallel Challenges</span>
+        <h2>What stands before us today</h2>
+        <p class="art-sub">Empowerment on one side. Reorientation on the other. Surajyapatham works on both.</p>
+        <div class="pair">
+          <div class="pair-item">
+            <img src="assets/img/photos/1529156069898-49953e39b3ac-sm.jpg" alt="Young people sitting together, arms around each other" loading="lazy">
+            <h3><i class="bi bi-megaphone"></i> Empowering citizens</h3>
+            <p>A growing necessity to make citizens aware of what they can rightfully expect from public institutions — dignity, transparency, fairness, accountability, and timely service delivery.</p>
+          </div>
+          <div class="pair-item">
+            <img src="assets/img/photos/1517048676732-d65bc937f952-sm.jpg" alt="Colleagues taking notes around a meeting table" loading="lazy">
+            <h3><i class="bi bi-compass"></i> Reorienting public servants</h3>
+            <p>An equally important need to reorient public servants towards the true essence of governance — empathy, integrity, responsiveness, ethical leadership, and purposeful public action.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="mission-box">
+        <span class="sec-label sec-label-light">Our Mission</span>
+        <h2>To foster a culture of <em>honest, empathetic,</em> and <em>outcome-driven</em> governance.</h2>
+        <p>Surajyapatham brings together ideas, practices, and people to strengthen governance from both the demand side (citizens) and the supply side (public institutions).</p>
+        <p>We don’t believe in critique without remedy. Every problem we surface comes with practitioners, frameworks, and field-tested paths forward.</p>
+        <ul class="art-checks">
+          <li>Explore the core dimensions of good governance through explainers and analysis</li>
+          <li>Convert proven innovations into scalable and adaptable models</li>
+          <li>Document field-tested solutions and administrative innovations</li>
+          <li>Build a collaborative ecosystem of citizens, officers, experts, and innovators</li>
+          <li>Provide practical tools and frameworks for planning and service delivery</li>
+        </ul>
+        <a href="#helps" class="read-link">See how we help <i class="bi bi-arrow-right"></i></a>
+      </section>
+
+      <section id="helps">
+        <span class="sec-label">How Surajyapatham Helps</span>
+        <h2>Five ways we move the needle</h2>
+        <figure class="art-figure">
+          <img src="assets/img/photos/1574943320219-553eb213f72d-lg.jpg" alt="Farmers working a paddy field with a tractor and cattle" loading="lazy">
+          <figcaption>From principle to practice — in the field.</figcaption>
+        </figure>
+        <div class="ways-list">
+          <div class="w"><span class="w-ic"><i class="bi bi-search"></i></span><div><h3>Explainers &amp; analysis</h3><p>Core dimensions of good governance — explained simply for citizens, analytically for practitioners.</p></div></div>
+          <div class="w"><span class="w-ic"><i class="bi bi-arrow-repeat"></i></span><div><h3>Scalable models</h3><p>Proven innovations converted into adaptable models that can be implemented elsewhere.</p></div></div>
+          <div class="w"><span class="w-ic"><i class="bi bi-book"></i></span><div><h3>Documentation</h3><p>Field-tested solutions and administrative innovations, written as honest case studies — not press releases.</p></div></div>
+          <div class="w"><span class="w-ic"><i class="bi bi-globe2"></i></span><div><h3>Collaborative ecosystem</h3><p>A space where citizens, public servants, experts, and innovators learn from one another.</p></div></div>
+          <div class="w"><span class="w-ic"><i class="bi bi-tools"></i></span><div><h3>Tools &amp; frameworks</h3><p>Practical instruments for planning, monitoring, service delivery, and informed decision-making.</p></div></div>
+          <div class="w"><span class="w-ic"><i class="bi bi-mortarboard"></i></span><div><h3>Learning &amp; mentorship</h3><p>Self-paced modules, live webinars, and peer mentorship — for officers and civil society alike.</p></div></div>
+        </div>
+      </section>
+
+      <section id="founder">
+        <span class="sec-label">Founder’s Message</span>
+        <h2>Service is the form. <em>Empathy is the substance.</em></h2>
+        <figure class="art-inline-right">
+          <img src="assets/img/photos/1519003722824-194d4455a60c-sm.jpg" alt="An open road winding through a mountain valley" loading="lazy">
+        </figure>
+        <p class="dropcap">I have spent the better part of my career inside the public administration system. I have seen what is possible when institutions, intent and individuals align — and what fails when any one is missing.</p>
+        <p>Surajyapatham is rooted in a simple belief: that governance can transform lives when principles turn into practice. That every form a citizen fills out is an act of trust. That every officer who answers honestly is keeping a quiet promise.</p>
+        <p>This is not a platform of critique. It is a platform of construction — and an invitation to anyone who believes that the work of building a developed society is not finished, and is everyone’s to do.</p>
+        <blockquote class="art-pull art-pull-quote">“Governance can transform lives when principles turn into practice.”<cite>— Surajyapatham</cite></blockquote>
+      </section>
+
+      <section id="partner" class="partner-box">
+        <div>
+          <span class="sec-label sec-label-light">Partner With Us</span>
+          <h2>Let’s build the next decade of citizen-centric governance — together.</h2>
+          <p>Citizens, officers, researchers, institutions and innovators — we want to hear from you.</p>
+        </div>
+        <a href="mailto:surajyapatham@gmail.com" class="btn-pill btn-pill-light">Get in touch <i class="bi bi-arrow-right"></i></a>
+      </section>
+
+      <div class="art-tags">
+        <span>Topics</span>
+        <a href="foundations.html#citizen-centric-governance">citizen-centric-governance</a><a href="foundations.html#ethical-public-service">public-service</a><a href="foundations.html#values">accountability</a><a href="#mission">mission</a>
+      </div>
+    </article>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="art-aside">
+      <div class="aside-sticky">
+        <div class="aside-box">
+          <span class="aside-title">In this article</span>
+          <ol class="aside-toc">
+            <li><a href="#premise">The Premise</a></li>
+            <li><a href="#challenges">Two Parallel Challenges</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#helps">How Surajyapatham Helps</a></li>
+            <li><a href="#founder">Founder’s Message</a></li>
+            <li><a href="#partner">Partner With Us</a></li>
+          </ol>
+        </div>
+
+        <div class="aside-box">
+          <span class="aside-title">Most read</span>
+          <a class="mini" href="case-study-covid-jagrata.html"><img src="assets/img/photos/1593113598332-cd288d649433-sm.jpg" alt="" loading="lazy"><span><em class="cat" style="--c:var(--c-gia)">Case Study</em>Covid Jagrata: Connecting the Response</span></a>
+          <a class="mini" href="citizen-hub.html#rights"><img src="assets/img/photos/1532375810709-75b1da00537c-sm.jpg" alt="" loading="lazy"><span><em class="cat" style="--c:var(--c-citizen)">Citizen Hub</em>Know Your Rights: What You Can Reasonably Expect</span></a>
+          <a class="mini" href="foundations.html#citizen-centric-governance"><img src="assets/img/photos/1544027993-37dbfe43562a-sm.jpg" alt="" loading="lazy"><span><em class="cat" style="--c:var(--c-found)">Foundations</em>Government Sees a Process. A Citizen Experiences a Journey.</span></a>
+          <a class="mini" href="case-study-kerala-rescue.html"><img src="assets/img/photos/1602216056096-3b40cc0c9944-sm.jpg" alt="" loading="lazy"><span><em class="cat" style="--c:var(--c-gia)">Case Study</em>Kerala Rescue: Crowd-Sourced Rescue in the 2018 Floods</span></a>
+        </div>
+
+        <div class="aside-box aside-sections">
+          <span class="aside-title">Explore sections</span>
+          <div class="aside-chips">
+            <a href="foundations.html" style="--c:var(--c-found)">Foundations</a>
+            <a href="case-studies.html" style="--c:var(--c-gia)">Governance in Action</a>
+            <a href="citizen-hub.html" style="--c:var(--c-citizen)">Citizen Hub</a>
+            <a href="tools.html" style="--c:var(--c-tools)">Tools &amp; Playbooks</a>
+            <a href="knowledge.html" style="--c:var(--c-know)">Knowledge</a>
+            <a href="learning.html" style="--c:var(--c-learn)">Learning</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ============ READ NEXT ============ -->
+<section class="read-next">
+  <div class="container-xl">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Keep reading</span>
+        <h2 class="section-title">Read <em>Next</em></h2>
+      </div>
+      <a href="index.html" class="head-link">Back to homepage <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="continue-grid">
+      <a href="foundations.html" class="next-card" style="--c:var(--c-found)">
+        <img src="assets/img/photos/1515162816999-a0c47dc192f7-sm.jpg" alt="" loading="lazy">
+        <span class="cat">Foundations</span>
+        <strong>Completion Is Not the Same as Success</strong>
+      </a>
+      <a href="case-study-covid-jagrata.html" class="next-card" style="--c:var(--c-gia)">
+        <img src="assets/img/photos/1576091160550-2173dba999ef-sm.jpg" alt="" loading="lazy">
+        <span class="cat">Governance in Action</span>
+        <strong>How a District Built One Connected Pandemic Response</strong>
+      </a>
+      <a href="tools.html" class="next-card" style="--c:var(--c-tools)">
+        <img src="assets/img/photos/1523240795612-9a054b0db644-sm.jpg" alt="" loading="lazy">
+        <span class="cat">Tools &amp; Playbooks</span>
+        <strong>The Mission-Mode Playbook: Turning Priorities into Delivery</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- SP:FOOTER -->
+<footer class="site-footer">
+  <div class="container-xl">
+    <p class="footer-statement">Better governance is built when citizens know, institutions listen, public resources are used wisely and good ideas are shared.</p>
+    <div class="row g-4 footer-cols">
+      <div class="col-lg-4">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Surajyapatham" class="footer-logo"></a>
+        <p class="footer-mission">A platform to sensitize and inspire citizens, public servants, and governance innovators — bridging the demand and supply sides of good governance.</p>
+        <a class="footer-mail" href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope"></i> surajyapatham@gmail.com</a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2"><h4>Explore</h4><a href="about.html">About Surajyapatham</a><a href="foundations.html">Foundations of Good Governance</a><a href="dilemmas.html">Dilemmas of a Public Servant</a><a href="case-studies.html">Governance in Action</a></div><div class="col-6 col-md-4 col-lg-2"><h4>For Citizens</h4><a href="citizen-hub.html#rights">Know Your Rights</a><a href="citizen-hub.html#standards">Service Delivery Standards</a><a href="citizen-hub.html#participate">Participate Locally</a><a href="citizen-hub.html#redressal">Raise a Grievance</a></div><div class="col-6 col-md-4 col-lg-2"><h4>For Officers</h4><a href="tools.html">Tools &amp; Templates</a><a href="knowledge.html">Knowledge Centre</a><a href="learning.html">Learning Hub</a><a href="contact.html">Request a Toolkit</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><h4>Connect</h4><a href="contact.html">Contact &amp; Feedback</a><a href="mailto:surajyapatham@gmail.com">Get in touch</a><a href="about.html#partner">Partner with us</a><a href="dilemmas.html">Dilemmas</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Surajyapatham. Surajyapatham — A platform for citizen-centric governance.</span>
+      <span><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="case-studies.html">Case Studies</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/search-index.js?v=6"></script>
+<script src="assets/js/main.js?v=6"></script>
+<!-- /SP:FOOTER -->
+</body>
+</html>

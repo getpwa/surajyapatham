@@ -18,97 +18,54 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css?v=6" rel="stylesheet">
 </head>
 <body>
-
+<!-- SP:HEADER -->
 <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
 <div class="scroll-progress" aria-hidden="true"><span></span></div>
-
-<!-- ============ UTILITY BAR ============ -->
 <div class="utility-bar d-none d-md-block">
   <div class="container-xl d-flex align-items-center justify-content-between">
     <span><i class="bi bi-calendar3 me-2"></i><span id="today"></span></span>
     <span class="utility-tag">Towards informed and empowered citizens · Responsive institutions · Better governance</span>
-    <span class="d-flex gap-3">
-      <a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-    </span>
+    <a href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope me-1"></i>surajyapatham@gmail.com</a>
   </div>
 </div>
-
-<!-- ============ A. HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="container-xl">
     <div class="header-row">
-      <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
-        <i class="bi bi-list"></i>
-      </button>
-
-      <a class="brand" href="index.html" aria-label="Surajyapatham home">
-        <img src="assets/img/logo.png" alt="Surajyapatham — way to good governance" width="640" height="146">
-      </a>
-
-      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
-        <a href="#latest" class="active">Latest</a>
-        <a href="#categories" style="--c:var(--c-found)">Foundations</a>
-        <a href="#categories" style="--c:var(--c-gia)">Governance in Action</a>
-        <a href="#categories" style="--c:var(--c-citizen)">Citizen Hub</a>
-        <a href="#categories" style="--c:var(--c-tools)">Tools &amp; Playbooks</a>
-        <a href="#categories" style="--c:var(--c-know)">Knowledge</a>
-        <a href="#categories" style="--c:var(--c-learn)">Learning</a>
+      <button class="icon-btn d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      <a class="brand" href="index.html" aria-label="Surajyapatham home"><img src="assets/img/logo.png" alt="Surajyapatham — way to good governance" width="640" height="146"></a>
+      <nav class="main-nav d-none d-xl-flex" aria-label="Primary">
+        <a href="foundations.html" style="--c:var(--c-found)">Foundations</a><a href="case-studies.html" style="--c:var(--c-gia)">Case Studies</a><a href="citizen-hub.html" style="--c:var(--c-citizen)">Citizen Hub</a><a href="tools.html" style="--c:var(--c-tools)">Tools</a><a href="knowledge.html" style="--c:var(--c-know)">Knowledge</a><a href="learning.html" style="--c:var(--c-learn)">Learning</a><a href="about.html">About</a><a href="contact.html">Contact</a>
       </nav>
-
       <div class="header-actions">
         <button class="icon-btn" type="button" id="searchOpen" aria-label="Search (press /)"><i class="bi bi-search"></i></button>
-        <button class="icon-btn theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark mode">
-          <i class="bi bi-moon-stars icon-dark"></i><i class="bi bi-sun icon-light"></i>
-        </button>
+        <button class="icon-btn theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars icon-dark"></i><i class="bi bi-sun icon-light"></i></button>
       </div>
     </div>
   </div>
 </header>
-
-<!-- Mobile navigation -->
-<div class="offcanvas offcanvas-start mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+<div class="offcanvas offcanvas-start mobile-nav" tabindex="-1" id="mobileNav" aria-label="Menu">
   <div class="offcanvas-header">
-    <img src="assets/img/logo.png" alt="Surajyapatham" class="brand-img-sm" id="mobileNavLabel">
+    <a href="index.html"><img src="assets/img/logo.png" alt="Surajyapatham" class="brand-img-sm"></a>
     <button type="button" class="icon-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
   </div>
   <div class="offcanvas-body">
-    <nav class="mobile-links">
-      <a href="#latest" data-bs-dismiss="offcanvas"><span>Latest</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-found)"><span>Foundations</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-gia)"><span>Governance in Action</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-citizen)"><span>Citizen Hub</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-tools)"><span>Tools &amp; Playbooks</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-know)"><span>Knowledge</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#categories" data-bs-dismiss="offcanvas" style="--c:var(--c-learn)"><span>Learning</span><i class="bi bi-arrow-right"></i></a>
-      <a href="#authors" data-bs-dismiss="offcanvas"><span>About &amp; Authors</span><i class="bi bi-arrow-right"></i></a>
-    </nav>
+    <nav class="mobile-links"><a href="index.html"><span>Home</span><i class="bi bi-arrow-right"></i></a><a href="foundations.html" style=--c:var(--c-found)><span>Foundations</span><i class="bi bi-arrow-right"></i></a><a href="case-studies.html" style=--c:var(--c-gia)><span>Case Studies</span><i class="bi bi-arrow-right"></i></a><a href="citizen-hub.html" style=--c:var(--c-citizen)><span>Citizen Hub</span><i class="bi bi-arrow-right"></i></a><a href="tools.html" style=--c:var(--c-tools)><span>Tools</span><i class="bi bi-arrow-right"></i></a><a href="knowledge.html" style=--c:var(--c-know)><span>Knowledge</span><i class="bi bi-arrow-right"></i></a><a href="learning.html" style=--c:var(--c-learn)><span>Learning</span><i class="bi bi-arrow-right"></i></a><a href="about.html"><span>About</span><i class="bi bi-arrow-right"></i></a><a href="contact.html"><span>Contact</span><i class="bi bi-arrow-right"></i></a></nav>
+    <a class="btn-pill w-100 justify-content-center mt-4" href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope"></i> surajyapatham@gmail.com</a>
   </div>
 </div>
-
-<!-- Search overlay -->
 <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search" hidden>
   <div class="container-xl">
-    <div class="search-top">
-      <span class="eyebrow">Search the journal</span>
-      <button class="icon-btn" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <label for="searchInput" class="visually-hidden">Search articles</label>
-    <input type="search" id="searchInput" class="search-input" placeholder="Rights, case studies, public value…" autocomplete="off">
-    <div class="search-suggest">
-      <span>Try:</span>
-      <button type="button" data-q="COVID">COVID Jagratha</button>
-      <button type="button" data-q="rights">Rights</button>
-      <button type="button" data-q="public value">Public value</button>
-      <button type="button" data-q="playbook">Playbooks</button>
-    </div>
+    <div class="search-top"><span class="eyebrow">Search Surajyapatham</span><button class="icon-btn" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button></div>
+    <label for="searchInput" class="visually-hidden">Search</label>
+    <input type="search" id="searchInput" class="search-input" placeholder="Rights, case studies, tools…" autocomplete="off">
+    <div class="search-suggest"><span>Try:</span><button type="button" data-q="Covid">Covid Jagrata</button><button type="button" data-q="rights">Rights</button><button type="button" data-q="grievance">Grievance</button><button type="button" data-q="mission">Mission mode</button></div>
     <ul class="search-results" id="searchResults"></ul>
   </div>
 </div>
+<!-- /SP:HEADER -->
 
 <main id="main">
 
@@ -118,11 +75,11 @@
     <div class="swiper-wrapper">
 
       <article class="swiper-slide hero-slide" style="--accent:var(--c-gia)">
-        <img class="hero-img" src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=2000&q=75" alt="Volunteers in masks handling relief supplies">
+        <img class="hero-img" src="assets/img/photos/1593113598332-cd288d649433-lg.jpg" alt="Volunteers in masks handling relief supplies">
         <div class="hero-shade"></div>
         <div class="container-xl hero-content">
           <span class="chip"><i class="bi bi-diagram-3"></i> Governance in Action · Case Study</span>
-          <h1 class="hero-title"><a href="#">COVID Jagratha: Connecting the Response, Not Just the Data</a></h1>
+          <h1 class="hero-title"><a href="case-study-covid-jagrata.html">COVID Jagratha: Connecting the Response, Not Just the Data</a></h1>
           <p class="hero-dek">Technology mattered because it connected the system; it did not replace the system. Inside a district’s attempt to link travel, surveillance, medical referrals and facilities into one response.</p>
           <div class="meta meta-light">
             <span class="avatar-mini">S</span>
@@ -130,16 +87,16 @@
             <span class="dot"></span><time datetime="2026-11-06">6 Nov 2026</time>
             <span class="dot"></span><span><i class="bi bi-clock"></i> 6 min read</span>
           </div>
-          <a href="#" class="read-link">Read the case study <i class="bi bi-arrow-right"></i></a>
+          <a href="case-study-covid-jagrata.html" class="read-link">Read the case study <i class="bi bi-arrow-right"></i></a>
         </div>
       </article>
 
       <article class="swiper-slide hero-slide" style="--accent:var(--c-found)">
-        <img class="hero-img" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=2000&q=75" alt="Two hands reaching towards each other between concrete pillars">
+        <img class="hero-img" src="assets/img/photos/1544027993-37dbfe43562a-lg.jpg" alt="Two hands reaching towards each other between concrete pillars">
         <div class="hero-shade"></div>
         <div class="container-xl hero-content">
           <span class="chip"><i class="bi bi-bank"></i> Foundations · Explainer</span>
-          <h1 class="hero-title"><a href="#">Government Sees a Process. A Citizen Experiences a Journey.</a></h1>
+          <h1 class="hero-title"><a href="foundations.html#citizen-centric-governance">Government Sees a Process. A Citizen Experiences a Journey.</a></h1>
           <p class="hero-dek">People rarely approach government because they want a certificate or a file to move. Citizen-centric governance begins by seeing public action from their side of the table.</p>
           <div class="meta meta-light">
             <span class="avatar-mini">S</span>
@@ -147,16 +104,16 @@
             <span class="dot"></span><time datetime="2026-11-04">4 Nov 2026</time>
             <span class="dot"></span><span><i class="bi bi-clock"></i> 4 min read</span>
           </div>
-          <a href="#" class="read-link">Read the explainer <i class="bi bi-arrow-right"></i></a>
+          <a href="foundations.html#citizen-centric-governance" class="read-link">Read the explainer <i class="bi bi-arrow-right"></i></a>
         </div>
       </article>
 
       <article class="swiper-slide hero-slide" style="--accent:var(--c-know)">
-        <img class="hero-img" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=2000&q=75" alt="An open road winding through a mountain valley">
+        <img class="hero-img" src="assets/img/photos/1519003722824-194d4455a60c-lg.jpg" alt="An open road winding through a mountain valley">
         <div class="hero-shade"></div>
         <div class="container-xl hero-content">
           <span class="chip"><i class="bi bi-feather"></i> Knowledge · Essay</span>
-          <h1 class="hero-title"><a href="#">Good Governance Is Not an Abstract Idea. We Experience It Every Day.</a></h1>
+          <h1 class="hero-title"><a href="about.html">Good Governance Is Not an Abstract Idea. We Experience It Every Day.</a></h1>
           <p class="hero-dek">It is the road that lasts, the school that teaches, the hospital that works — and the citizen who is treated with dignity. Why public resources exist to improve people’s lives.</p>
           <div class="meta meta-light">
             <span class="avatar-mini">S</span>
@@ -164,7 +121,7 @@
             <span class="dot"></span><time datetime="2026-11-01">1 Nov 2026</time>
             <span class="dot"></span><span><i class="bi bi-clock"></i> 3 min read</span>
           </div>
-          <a href="#" class="read-link">Read the essay <i class="bi bi-arrow-right"></i></a>
+          <a href="about.html" class="read-link">Read the essay <i class="bi bi-arrow-right"></i></a>
         </div>
       </article>
 
@@ -183,6 +140,18 @@
   </div>
 </section>
 
+<!-- SP:HOME-A -->
+<section class="hx-intro"><div class="container-xl">
+  <div class="hx-intro-grid">
+    <div><span class="eyebrow">Reimagining Citizen-Centric Governance</span><h2 class="hx-big">Good governance begins with <em>good intentions</em> — but thrives through <em>better practices</em>.</h2></div>
+    <div><p class="hx-lede">Surajyapatham is a platform to sensitize and inspire citizens, public servants, and governance innovators — built on the belief that informed citizens and ethical public service together sustain trust and dignity.</p><p class="hx-tag">Good governance is built on informed citizens, ethical public service and practices that sustain trust and dignity.</p>
+      <div class="page-actions"><a class="btn-pill" href="case-studies.html">Explore case studies <i class="bi bi-arrow-right"></i></a><a class="btn-outline-ink" href="about.html">What we stand for <i class="bi bi-arrow-right"></i></a></div></div>
+  </div>
+  <div class="hx-stats"><div class="hx-stat"><strong>25</strong><span>Field-tested case studies</span></div><div class="hx-stat"><strong>9</strong><span>Knowledge domains</span></div><div class="hx-stat"><strong>100</strong><span>Citizens reached (lakhs)</span></div></div>
+  <div class="hx-why"><span class="eyebrow">Why Surajyapatham</span><h2 class="section-title hx-why-title">A platform for the demand side and the supply side of governance.</h2><div class="hx-why-cols"><p>A developed society is not defined by economic prosperity alone. It is built on empowered citizens, transparent institutions, and a governance system that enables people to interact with government, businesses, and one another with dignity, trust, and ease.</p><p>Today, two parallel challenges stand before us — empowering citizens with awareness of what they can rightfully expect, and reorienting public servants towards the true essence of governance: empathy, integrity, and purposeful public action.</p></div></div>
+</div></section>
+<!-- /SP:HOME-A -->
+
 <!-- ============ C. LATEST ARTICLES ============ -->
 <section class="section latest" id="latest">
   <div class="container-xl">
@@ -191,29 +160,29 @@
         <span class="eyebrow">Fresh from the desk</span>
         <h2 class="section-title">Latest <em>Articles</em></h2>
       </div>
-      <a href="#" class="head-link">All articles <i class="bi bi-arrow-right"></i></a>
+      <a href="case-studies.html" class="head-link">All articles <i class="bi bi-arrow-right"></i></a>
     </div>
 
     <div class="latest-grid">
       <!-- Lead card -->
       <article class="lcard lcard-lead reveal" data-cat="gia" style="--c:var(--c-gia)">
-        <a href="#" class="lcard-media"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=75" alt="Laptop with a stethoscope on a desk" loading="lazy"></a>
+        <a href="case-study-covid-jagrata.html" class="lcard-media"><img src="assets/img/photos/1576091160550-2173dba999ef-lg.jpg" alt="Laptop with a stethoscope on a desk" loading="lazy"></a>
         <div class="lcard-body">
           <span class="cat">Governance in Action</span>
-          <h3><a href="#">How a District Built One Connected Pandemic Response</a></h3>
+          <h3><a href="case-study-covid-jagrata.html">How a District Built One Connected Pandemic Response</a></h3>
           <p>Information needed to reach the person authorised to take the next action. A dashboard alone could not provide that continuity — so the system kept adapting as field requirements changed.</p>
-          <div class="slugs"><a href="#">covid-jagratha</a><a href="#">crisis-response</a><a href="#">digital-governance</a></div>
+          <div class="slugs"><a href="case-study-covid-jagrata.html">covid-jagratha</a><a href="tools.html#disaster">crisis-response</a><a href="case-studies.html">digital-governance</a></div>
           <div class="meta"><span class="avatar-mini">S</span><strong>The Founding Editor</strong><span class="dot"></span>6 Nov 2026<span class="dot"></span>6 min</div>
         </div>
       </article>
 
       <!-- Tall portrait card -->
       <article class="lcard lcard-tall reveal" data-cat="found" style="--c:var(--c-found)">
-        <a href="#" class="lcard-media"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=75" alt="Colleagues taking notes around a meeting table" loading="lazy"></a>
+        <a href="foundations.html#citizen-centric-governance" class="lcard-media"><img src="assets/img/photos/1517048676732-d65bc937f952-sm.jpg" alt="Colleagues taking notes around a meeting table" loading="lazy"></a>
         <div class="lcard-body">
           <span class="cat">Foundations · Deep Dive</span>
-          <h3><a href="#">From the Citizen’s Journey to Public Value: A Six-Part Review</a></h3>
-          <div class="slugs"><a href="#">public-value</a><a href="#">outcomes</a><a href="#">service-design</a></div>
+          <h3><a href="foundations.html#citizen-centric-governance">From the Citizen’s Journey to Public Value: A Six-Part Review</a></h3>
+          <div class="slugs"><a href="foundations.html#values">public-value</a><a href="tools.html">outcomes</a><a href="citizen-hub.html#standards">service-design</a></div>
           <div class="meta"><strong>The Founding Editor</strong><span class="dot"></span>5 Nov 2026<span class="dot"></span>6 min</div>
         </div>
       </article>
@@ -222,38 +191,38 @@
       <article class="lcard lcard-quote reveal" data-cat="found" style="--c:var(--c-found)">
         <span class="cat">Foundations · Explainer</span>
         <blockquote>“Government may see a process. A citizen experiences a journey.”</blockquote>
-        <h3><a href="#">Citizen-Centric Governance</a></h3>
-        <div class="slugs"><a href="#">citizen-centric-governance</a><a href="#">dignity</a><a href="#">rights</a></div>
+        <h3><a href="foundations.html#citizen-centric-governance">Citizen-Centric Governance</a></h3>
+        <div class="slugs"><a href="foundations.html#citizen-centric-governance">citizen-centric-governance</a><a href="foundations.html#values">dignity</a><a href="citizen-hub.html#rights">rights</a></div>
         <div class="meta"><strong>The Founding Editor</strong><span class="dot"></span>4 Nov 2026<span class="dot"></span>4 min</div>
       </article>
 
       <!-- Horizontal cards -->
       <article class="lcard lcard-row reveal" data-cat="gia" style="--c:var(--c-gia)">
-        <a href="#" class="lcard-media"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=700&q=75" alt="Two people holding hands" loading="lazy"></a>
+        <a href="case-study-udayam.html" class="lcard-media"><img src="assets/img/photos/1584515933487-779824d29309-sm.jpg" alt="Two people holding hands" loading="lazy"></a>
         <div class="lcard-body">
           <span class="cat">Governance in Action</span>
-          <h3><a href="#">Udayam: What It Takes to House the Homeless</a></h3>
-          <div class="slugs"><a href="#">housing</a><a href="#">inclusion</a></div>
+          <h3><a href="case-study-udayam.html">Udayam: What It Takes to House the Homeless</a></h3>
+          <div class="slugs"><a href="case-study-udayam.html">housing</a><a href="foundations.html#values">inclusion</a></div>
           <div class="meta"><strong>The Founding Editor</strong><span class="dot"></span>28 Oct 2026<span class="dot"></span>7 min</div>
         </div>
       </article>
 
       <article class="lcard lcard-row reveal" data-cat="tools" style="--c:var(--c-tools)">
-        <a href="#" class="lcard-media"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=75" alt="A team collaborating around a laptop" loading="lazy"></a>
+        <a href="tools.html#planning" class="lcard-media"><img src="assets/img/photos/1523240795612-9a054b0db644-sm.jpg" alt="A team collaborating around a laptop" loading="lazy"></a>
         <div class="lcard-body">
           <span class="cat">Tools &amp; Playbooks</span>
-          <h3><a href="#">The Mission-Mode Playbook: Turning Priorities into Delivery</a></h3>
-          <div class="slugs"><a href="#">mission-mode</a><a href="#">implementation</a></div>
+          <h3><a href="tools.html#planning">The Mission-Mode Playbook: Turning Priorities into Delivery</a></h3>
+          <div class="slugs"><a href="tools.html#planning">mission-mode</a><a href="tools.html">implementation</a></div>
           <div class="meta"><strong>The Founding Editor</strong><span class="dot"></span>24 Oct 2026<span class="dot"></span>8 min</div>
         </div>
       </article>
 
       <article class="lcard lcard-row reveal" data-cat="tools" style="--c:var(--c-tools)">
-        <a href="#" class="lcard-media"><img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=700&q=75" alt="Neat rows of crops across a field" loading="lazy"></a>
+        <a href="tools.html#planning" class="lcard-media"><img src="assets/img/photos/1560493676-04071c5f467b-sm.jpg" alt="Neat rows of crops across a field" loading="lazy"></a>
         <div class="lcard-body">
           <span class="cat">Tools &amp; Playbooks · Template</span>
-          <h3><a href="#">A Model Project Template for Public Works That Last</a></h3>
-          <div class="slugs"><a href="#">project-template</a><a href="#">infrastructure</a></div>
+          <h3><a href="tools.html#planning">A Model Project Template for Public Works That Last</a></h3>
+          <div class="slugs"><a href="tools.html#planning">project-template</a><a href="tools.html">infrastructure</a></div>
           <div class="meta"><strong>The Founding Editor</strong><span class="dot"></span>20 Oct 2026<span class="dot"></span>5 min</div>
         </div>
       </article>
@@ -272,26 +241,26 @@
 
     <div class="picks-grid">
       <article class="pick pick-main reveal">
-        <a href="#" class="pick-media"><img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=1400&q=75" alt="A pothole in a cracked road reflecting the sky" loading="lazy"></a>
+        <a href="foundations.html" class="pick-media"><img src="assets/img/photos/1515162816999-a0c47dc192f7-lg.jpg" alt="A pothole in a cracked road reflecting the sky" loading="lazy"></a>
         <div class="pick-card">
           <span class="cat cat-light" style="--c:var(--c-found)">Foundations</span>
-          <h3><a href="#">Completion Is Not the Same as Success</a></h3>
+          <h3><a href="foundations.html">Completion Is Not the Same as Success</a></h3>
           <p>A project is not successful merely because it is completed. A scheme is not successful merely because money is spent. On public value, outcomes — and measuring what changed.</p>
           <div class="meta meta-light"><strong>The Founding Editor</strong><span class="dot"></span>9 min read</div>
         </div>
       </article>
 
       <article class="pick pick-side reveal">
-        <a href="#" class="pick-media"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=75" alt="Mountain peaks rising above a sea of clouds" loading="lazy"></a>
+        <a href="dilemmas.html" class="pick-media"><img src="assets/img/photos/1506905925346-21bda4d32df4-sm.jpg" alt="Mountain peaks rising above a sea of clouds" loading="lazy"></a>
         <span class="cat cat-light" style="--c:var(--c-learn)">Series · Dilemmas of a Public Servant</span>
-        <h3><a href="#">When the Rule and the Right Thing Pull Apart</a></h3>
+        <h3><a href="dilemmas.html">When the Rule and the Right Thing Pull Apart</a></h3>
         <p class="pick-pull">“What is the right thing to do within law, public interest and the realities of the situation?”</p>
       </article>
 
       <article class="pick pick-side pick-offset reveal">
-        <a href="#" class="pick-media"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=75" alt="A group of friends sitting together, arms around each other" loading="lazy"></a>
+        <a href="citizen-hub.html#participate" class="pick-media"><img src="assets/img/photos/1529156069898-49953e39b3ac-sm.jpg" alt="A group of friends sitting together, arms around each other" loading="lazy"></a>
         <span class="cat cat-light" style="--c:var(--c-gia)">Governance in Action</span>
-        <h3><a href="#">Nammude Kozhikode: When Citizens Help Shape a District</a></h3>
+        <h3><a href="citizen-hub.html#participate">Nammude Kozhikode: When Citizens Help Shape a District</a></h3>
         <p class="pick-pull">Citizen participation, not as consultation theatre, but as a working partnership.</p>
       </article>
     </div>
@@ -310,48 +279,48 @@
     </div>
 
     <div class="cat-panels reveal">
-      <a href="#" class="cat-panel is-open" style="--c:var(--c-found)">
-        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="foundations.html" class="cat-panel is-open" style="--c:var(--c-found)">
+        <img src="assets/img/photos/1532375810709-75b1da00537c-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">01</span>
         <span class="cat-icon"><i class="bi bi-bank2"></i></span>
         <span class="cat-name">Foundations</span>
         <span class="cat-desc">The values, rights orientation and public-value principles behind good governance.</span>
         <span class="cat-count">5 explainers <i class="bi bi-arrow-up-right"></i></span>
       </a>
-      <a href="#" class="cat-panel" style="--c:var(--c-gia)">
-        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="case-studies.html" class="cat-panel" style="--c:var(--c-gia)">
+        <img src="assets/img/photos/1574943320219-553eb213f72d-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">02</span>
         <span class="cat-icon"><i class="bi bi-diagram-3"></i></span>
         <span class="cat-name">Governance in Action</span>
         <span class="cat-desc">Real initiatives. Real constraints. What changed, what did not, and what others can learn.</span>
         <span class="cat-count">7 case studies <i class="bi bi-arrow-up-right"></i></span>
       </a>
-      <a href="#" class="cat-panel" style="--c:var(--c-citizen)">
-        <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="citizen-hub.html" class="cat-panel" style="--c:var(--c-citizen)">
+        <img src="assets/img/photos/1599059813005-11265ba4b4ce-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">03</span>
         <span class="cat-icon"><i class="bi bi-people"></i></span>
         <span class="cat-name">Citizen Hub</span>
         <span class="cat-desc">Rights, entitlements, participation, public systems and grievance redress — explained simply.</span>
         <span class="cat-count">3 guides <i class="bi bi-arrow-up-right"></i></span>
       </a>
-      <a href="#" class="cat-panel" style="--c:var(--c-tools)">
-        <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="tools.html" class="cat-panel" style="--c:var(--c-tools)">
+        <img src="assets/img/photos/1585829365295-ab7cd400c167-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">04</span>
         <span class="cat-icon"><i class="bi bi-tools"></i></span>
         <span class="cat-name">Tools &amp; Playbooks</span>
         <span class="cat-desc">Practical frameworks for planning, value for money, implementation, service quality and outcomes.</span>
         <span class="cat-count">3 toolkits <i class="bi bi-arrow-up-right"></i></span>
       </a>
-      <a href="#" class="cat-panel" style="--c:var(--c-know)">
-        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="knowledge.html" class="cat-panel" style="--c:var(--c-know)">
+        <img src="assets/img/photos/1588681664899-f142ff2dc9b1-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">05</span>
         <span class="cat-icon"><i class="bi bi-journal-richtext"></i></span>
         <span class="cat-name">Knowledge</span>
         <span class="cat-desc">Evidence, explainers and perspectives on how governments and institutions can perform better.</span>
         <span class="cat-count">Digest &amp; columns <i class="bi bi-arrow-up-right"></i></span>
       </a>
-      <a href="#" class="cat-panel" style="--c:var(--c-learn)">
-        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy">
+      <a href="learning.html" class="cat-panel" style="--c:var(--c-learn)">
+        <img src="assets/img/photos/1477959858617-67f85cf4f1df-sm.jpg" alt="" loading="lazy">
         <span class="cat-no">06</span>
         <span class="cat-icon"><i class="bi bi-mortarboard"></i></span>
         <span class="cat-name">Learning</span>
@@ -359,14 +328,7 @@
         <span class="cat-count">3 modules <i class="bi bi-arrow-up-right"></i></span>
       </a>
     </div>
-
-    <!-- Audience doorways -->
-    <div class="audiences">
-      <a href="#" class="audience reveal"><i class="bi bi-person-check"></i><div><strong>For Citizens</strong><span>Know your rights. Know what you can expect. Participate and seek redress.</span></div><i class="bi bi-arrow-right go"></i></a>
-      <a href="#" class="audience reveal"><i class="bi bi-briefcase"></i><div><strong>For Public Servants</strong><span>Learn from real reforms and use practical frameworks to improve outcomes.</span></div><i class="bi bi-arrow-right go"></i></a>
-      <a href="#" class="audience reveal"><i class="bi bi-lightbulb"></i><div><strong>For Researchers &amp; Innovators</strong><span>Explore evidence, models and implementation lessons — and contribute ideas.</span></div><i class="bi bi-arrow-right go"></i></a>
-    </div>
-  </div>
+</div>
 </section>
 
 <!-- ============ F. TRENDING ============ -->
@@ -386,12 +348,12 @@
         </div>
 
         <ol class="trend-list" id="trendList">
-          <li class="trend reveal"><span class="trend-no">01</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="#">COVID Jagratha: Connecting the Response, Not Just the Data</a></h3><span class="meta">6 min · <i class="bi bi-graph-up-arrow"></i> Rising</span></div><img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
-          <li class="trend reveal"><span class="trend-no">02</span><div><span class="cat" style="--c:var(--c-citizen)">Citizen Hub</span><h3><a href="#">Know Your Rights: What You Can Reasonably Expect from Public Services</a></h3><span class="meta">5 min</span></div><img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
-          <li class="trend reveal"><span class="trend-no">03</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="#">Kerala Rescue: Coordination When the Water Rises</a></h3><span class="meta">8 min</span></div><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
-          <li class="trend reveal"><span class="trend-no">04</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="#">Ente Bhoomi: Rebuilding Trust in Land Records</a></h3><span class="meta">7 min</span></div><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
-          <li class="trend reveal"><span class="trend-no">05</span><div><span class="cat" style="--c:var(--c-found)">Foundations</span><h3><a href="#">Every Rupee Counts: Value for Money in Public Choices</a></h3><span class="meta">5 min</span></div><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
-          <li class="trend reveal"><span class="trend-no">06</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="#">Krishi Samruddhi: Mission-Mode Thinking in Local Agriculture</a></h3><span class="meta">6 min</span></div><img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=240&h=240&q=60" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">01</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="case-study-covid-jagrata.html">COVID Jagratha: Connecting the Response, Not Just the Data</a></h3><span class="meta">6 min · <i class="bi bi-graph-up-arrow"></i> Rising</span></div><img src="assets/img/photos/1593113598332-cd288d649433-sm.jpg" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">02</span><div><span class="cat" style="--c:var(--c-citizen)">Citizen Hub</span><h3><a href="citizen-hub.html#rights">Know Your Rights: What You Can Reasonably Expect from Public Services</a></h3><span class="meta">5 min</span></div><img src="assets/img/photos/1532375810709-75b1da00537c-sm.jpg" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">03</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="case-study-kerala-rescue.html">Kerala Rescue: Coordination When the Water Rises</a></h3><span class="meta">8 min</span></div><img src="assets/img/photos/1602216056096-3b40cc0c9944-sm.jpg" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">04</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="case-study-ente-bhoomi.html">Ente Bhoomi: Rebuilding Trust in Land Records</a></h3><span class="meta">7 min</span></div><img src="assets/img/photos/1500382017468-9049fed747ef-sm.jpg" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">05</span><div><span class="cat" style="--c:var(--c-found)">Foundations</span><h3><a href="foundations.html#values">Every Rupee Counts: Value for Money in Public Choices</a></h3><span class="meta">5 min</span></div><img src="assets/img/photos/1532629345422-7515f3d16bb6-sm.jpg" alt="" loading="lazy"></li>
+          <li class="trend reveal"><span class="trend-no">06</span><div><span class="cat" style="--c:var(--c-gia)">Case Study</span><h3><a href="case-study-oppam.html">Oppam: Cutting Grievance Time from 21 Days to 96 Hours</a></h3><span class="meta">5 min</span></div><img src="assets/img/photos/1521791136064-7986c2920216-sm.jpg" alt="" loading="lazy"></li>
         </ol>
       </div>
 
@@ -400,23 +362,61 @@
           <span class="eyebrow eyebrow-light">New here?</span>
           <h3>A three-step reading path</h3>
           <ol>
-            <li><span>1</span><a href="#">Good governance is not an abstract idea</a></li>
-            <li><span>2</span><a href="#">Citizen-centric governance, explained</a></li>
-            <li><span>3</span><a href="#">COVID Jagratha — a case study</a></li>
+            <li><span>1</span><a href="about.html">Good governance is not an abstract idea</a></li>
+            <li><span>2</span><a href="foundations.html#citizen-centric-governance">Citizen-centric governance, explained</a></li>
+            <li><span>3</span><a href="case-study-covid-jagrata.html">COVID Jagratha — a case study</a></li>
           </ol>
-          <a href="#" class="read-link">Start reading <i class="bi bi-arrow-right"></i></a>
+          <a href="about.html" class="read-link">Start reading <i class="bi bi-arrow-right"></i></a>
         </div>
 
         <div class="topic-cloud reveal">
           <span class="eyebrow">On our radar</span>
           <div class="tags">
-            <a href="#">#PublicValue</a><a href="#">#GrievanceRedress</a><a href="#">#Dignity</a><a href="#">#SystemsThinking</a><a href="#">#ServiceStandards</a><a href="#">#MissionMode</a><a href="#">#WardSabha</a><a href="#">#Accountability</a><a href="#">#DisasterResponse</a><a href="#">#LandRecords</a>
+            <a href="foundations.html#values">#PublicValue</a><a href="case-study-oppam.html">#GrievanceRedress</a><a href="foundations.html#values">#Dignity</a><a href="foundations.html#systems">#SystemsThinking</a><a href="citizen-hub.html#standards">#ServiceStandards</a><a href="tools.html#planning">#MissionMode</a><a href="citizen-hub.html#participate">#WardSabha</a><a href="foundations.html#values">#Accountability</a><a href="tools.html#disaster">#DisasterResponse</a><a href="case-study-ente-bhoomi.html">#LandRecords</a>
           </div>
         </div>
       </aside>
     </div>
   </div>
 </section>
+
+<!-- SP:HOME-B -->
+<section class="section hx-block hx-tint"><div class="container-xl">
+  <div class="section-head"><div><span class="eyebrow">What you&#x27;ll find here</span><h2 class="section-title">Built for every stakeholder in governance</h2></div><p class="section-lede">Whether you read the Constitution as a citizen, implement policy as a public servant, or shape ideas as a researcher — Surajyapatham meets you where you are.</p></div>
+  <div class="hx-aud-grid"><div class="hx-aud"><span class="ic-ico"><i class="bi bi-people" aria-hidden="true"></i></span><h3>For Citizens</h3><ul class="ic-bullets"><li>Sensitization on rights in a democracy</li><li>What to expect from a well-governed society</li><li>Simple tools to understand, engage, and participate</li></ul><a class="read-link" href="citizen-hub.html">Visit Citizen Hub <i class="bi bi-arrow-right"></i></a></div><div class="hx-aud"><span class="ic-ico"><i class="bi bi-bank" aria-hidden="true"></i></span><h3>For Public Servants</h3><ul class="ic-bullets"><li>Insights on citizen-centric, ethical governance</li><li>Frameworks for transforming service delivery</li><li>Practical, adaptable, implementable models</li></ul><a class="read-link" href="foundations.html">Explore Foundations <i class="bi bi-arrow-right"></i></a></div><div class="hx-aud"><span class="ic-ico"><i class="bi bi-eyeglasses" aria-hidden="true"></i></span><h3>For Researchers</h3><ul class="ic-bullets"><li>Public policy and institutional transformation</li><li>Systems thinking in governance</li><li>Case studies and impact research</li></ul><a class="read-link" href="knowledge.html">Browse Knowledge <i class="bi bi-arrow-right"></i></a></div><div class="hx-aud"><span class="ic-ico"><i class="bi bi-lightbulb" aria-hidden="true"></i></span><h3>For Innovators</h3><ul class="ic-bullets"><li>A collaborative space for ideation</li><li>Inspiration from transformative initiatives</li><li>Opportunities to contribute solutions</li></ul><a class="read-link" href="knowledge.html#innovation">See Innovations <i class="bi bi-arrow-right"></i></a></div></div>
+</div></section>
+<section class="section hx-block"><div class="container-xl">
+  <div class="section-head"><div><span class="eyebrow">Spotlight Stories</span><h2 class="section-title">Short, simple, relatable stories that inspire confidence.</h2></div><a class="head-link" href="knowledge.html">All spotlights <i class="bi bi-arrow-right"></i></a></div>
+  <p class="section-lede mb-4">From an everyday citizen who reshaped her ward, to officers who set the bar for ethical service.</p>
+  <div class="hx-spot-grid"><article class="hx-spot"><a href="knowledge.html" class="hx-spot-media"><img src="assets/img/photos/1582213782179-e0d53f98f2ca-sm.jpg" alt="The citizen who made a difference" loading="lazy" width="700" height="467"><span class="hx-spot-label">Citizen Story</span></a>
+      <h3><a href="knowledge.html">The citizen who made a difference</a></h3><p>How one ward-sabha attendee turned a forgotten road project into a model of participatory planning — and a 90-day delivery.</p><a class="read-link" href="knowledge.html">Read the story <i class="bi bi-arrow-right"></i></a></article><article class="hx-spot"><a href="case-study-oppam.html" class="hx-spot-media"><img src="assets/img/photos/1521791136064-7986c2920216-sm.jpg" alt="An idea that quietly changed lives" loading="lazy" width="700" height="467"><span class="hx-spot-label">Innovation</span></a>
+      <h3><a href="case-study-oppam.html">An idea that quietly changed lives</a></h3><p>How a simple WhatsApp-based escalation protocol cut grievance resolution time at a district office from 21 days to 96 hours.</p><a class="read-link" href="case-study-oppam.html">See the model <i class="bi bi-arrow-right"></i></a></article><article class="hx-spot"><a href="https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/" target="_blank" rel="noopener" class="hx-spot-media"><img src="assets/img/photos/1531538512164-e6c51ea63d20-sm.jpg" alt="S. R. Sankaran — a life of justice" loading="lazy" width="700" height="467"><span class="hx-spot-label">Public Servant</span></a>
+      <h3><a href="https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/" target="_blank" rel="noopener">S. R. Sankaran — a life of justice</a></h3><p>An exemplary IAS officer who set the standard for integrity, compassion and dedication to the most marginalised. Featured in The Better India.</p><a class="read-link" href="https://thebetterindia.com/165915/ias-hero-sr-sankaran-andhra-pradesh-india-news/" target="_blank" rel="noopener">Read the profile <i class="bi bi-arrow-right"></i></a></article></div>
+</div></section>
+<section class="section hx-block hx-pillars-band"><div class="container-xl">
+  <div class="section-head"><div><span class="eyebrow eyebrow-light">The five pillars</span><h2 class="section-title">Foundations of good governance</h2></div><p class="section-lede">Five values that turn intent into outcomes — and citizens into stakeholders.</p></div>
+  <div class="hx-pillar-grid"><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-search" aria-hidden="true"></i></span><h3>Transparency</h3><p>Information that citizens can find, follow, and trust — from budgets to file movements.</p></div><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-feather" aria-hidden="true"></i></span><h3>Dignity</h3><p>Every interaction with the state must affirm — not diminish — the citizen&#x27;s standing.</p></div><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-people" aria-hidden="true"></i></span><h3>Inclusion</h3><p>Service that reaches the last person first, and designs for those most likely to be left out.</p></div><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-bar-chart" aria-hidden="true"></i></span><h3>Accountability</h3><p>Clear ownership, measurable outcomes, and consequences when promises slip.</p></div><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-bank2" aria-hidden="true"></i></span><h3>Fairness</h3><p>Rules that apply evenly, processes that treat the powerful and the powerless alike.</p></div><div class="hx-pillar"><span class="ic-ico"><i class="bi bi-heart" aria-hidden="true"></i></span><h3>Sustainability</h3><p>Decisions today that leave the institutions, environment and communities of tomorrow intact.</p></div></div>
+</div></section>
+<section class="section hx-block"><div class="container-xl">
+  <div class="section-head"><div><span class="eyebrow">Governance in Action</span><h2 class="section-title">Featured case studies</h2></div><a class="head-link" href="case-studies.html">All case studies <i class="bi bi-arrow-right"></i></a></div>
+  <p class="section-lede mb-4">Real initiatives, real impact — citizen summaries and detailed officer playbooks for each.</p>
+  <div class="img-grid ic-cols-3"><article class="img-card"><a href="case-study-ente-bhoomi.html" class="img-card-media"><img src="assets/img/photos/1572883454114-1cf0031ede2a-sm.jpg" alt="Ente Bhoomi &amp; ILIMS" loading="lazy" width="700" height="438"></a>
+          <div class="img-card-body"><span class="cat" style="--c:var(--c-gia)">Digital Governance</span><h3><a href="case-study-ente-bhoomi.html">Ente Bhoomi &amp; ILIMS</a></h3>
+          <span class="img-card-sub">Kerala — Digital land records</span><p>Bringing 30 million land parcels into a unified, citizen-facing digital land information system.</p><a class="read-link" href="case-study-ente-bhoomi.html">Read case study <i class="bi bi-arrow-right"></i></a></div></article><article class="img-card"><a href="case-study-kerala-rescue.html" class="img-card-media"><img src="assets/img/photos/1547683905-f686c993aae5-sm.jpg" alt="Kerala Rescue" loading="lazy" width="700" height="438"></a>
+          <div class="img-card-body"><span class="cat" style="--c:var(--c-gia)">Disaster Response</span><h3><a href="case-study-kerala-rescue.html">Kerala Rescue</a></h3>
+          <span class="img-card-sub">Kerala — 2018 floods response</span><p>A real-time, crowd-sourced rescue coordination platform that turned every smartphone into a relief node.</p><a class="read-link" href="case-study-kerala-rescue.html">Read case study <i class="bi bi-arrow-right"></i></a></div></article><article class="img-card"><a href="case-study-covid-jagrata.html" class="img-card-media"><img src="assets/img/photos/1584036561566-baf8f5f1b144-sm.jpg" alt="Covid Jagrata" loading="lazy" width="700" height="438"></a>
+          <div class="img-card-body"><span class="cat" style="--c:var(--c-gia)">Digital Governance</span><h3><a href="case-study-covid-jagrata.html">Covid Jagrata</a></h3>
+          <span class="img-card-sub">Kerala — Pandemic command system</span><p>An integrated digital backbone that tracked 80+ million people, vaccinations, beds and supply lines through the pandemic.</p><a class="read-link" href="case-study-covid-jagrata.html">Read case study <i class="bi bi-arrow-right"></i></a></div></article></div>
+  <div class="hx-two"><figure><img src="assets/img/photos/1559027615-cd4628902d4a-sm.jpg" alt="Citizens at a community meeting" loading="lazy" width="700" height="520"></figure>
+      <div><span class="eyebrow">Citizen Empowerment</span><h2 class="hx-two-title">Know what to expect. Know how to ask. Know how to participate.</h2><p>The strongest demand for good governance comes from informed citizens. Surajyapatham translates rights, processes and grievance mechanisms into language anyone can understand — and act on.</p><p>From ward sabhas to certificate timelines, learn what &#x27;good service&#x27; actually looks like — and what to do when it isn&#x27;t delivered.</p><ul class="art-checklist"><li>Simple guides on everyday rights (land, certificates, welfare, health)</li><li>How to attend ward sabhas and influence local plans</li><li>Step-by-step grievance redressal flows</li><li>Easy explainers on file movement, certificates, and applications</li></ul><a class="read-link" href="citizen-hub.html">Visit the Citizen Hub <i class="bi bi-arrow-right"></i></a></div></div>
+  <div class="hx-two hx-two-rev"><figure><img src="assets/img/photos/1573164574572-cb89e39749b4-sm.jpg" alt="Officer reviewing field data on a dashboard" loading="lazy" width="700" height="520"></figure>
+      <div><span class="eyebrow">For Public Servants</span><h2 class="hx-two-title">Ethical, citizen-centric, outcome-driven — without re-inventing the wheel.</h2><p>Every model on Surajyapatham comes with a replication toolkit: the design assumptions, the staff structure, the procurement notes, the dashboards, and the politics of getting it done.</p><p>From mission-mode reforms to citizen charters, the tools are written for the officer who needs to ship the next quarter — not just describe the ideal state.</p><ul class="art-checklist"><li>Mission Mode Framework with go/no-go criteria</li><li>Citizen Charter Generator with SLA defaults</li><li>Real-Time Governance Tracker template</li><li>Disaster response SOPs and incident playbooks</li></ul><a class="read-link" href="tools.html">Browse tools &amp; templates <i class="bi bi-arrow-right"></i></a></div></div>
+</div></section>
+<section class="section hx-block hx-tint"><div class="container-xl">
+  <div class="section-head"><div><span class="eyebrow">Knowledge Centre</span><h2 class="section-title">Deep reads for serious practitioners</h2></div><p class="section-lede">Innovation digests, playbooks, expert columns and whitepapers — curated for those building the next decade of public administration.</p></div>
+  <div class="hx-kc-grid"><a class="hx-kc" href="knowledge.html"><span class="ic-ico"><i class="bi bi-newspaper" aria-hidden="true"></i></span><h3>Innovation Digest</h3><p>Top 10 governance innovations across India and the world, every month.</p><span class="read-link">Read latest <i class="bi bi-arrow-right"></i></span></a><a class="hx-kc" href="knowledge.html"><span class="ic-ico"><i class="bi bi-journals" aria-hidden="true"></i></span><h3>Playbooks</h3><p>Implementation-ready manuals — from grievance redressal to extreme-poverty eradication.</p><span class="read-link">Read more <i class="bi bi-arrow-right"></i></span></a><a class="hx-kc" href="knowledge.html"><span class="ic-ico"><i class="bi bi-pen" aria-hidden="true"></i></span><h3>Expert Columns</h3><p>Insights from senior officers, academics, and domain experts — written for the field.</p><span class="read-link">Read more <i class="bi bi-arrow-right"></i></span></a><a class="hx-kc" href="knowledge.html"><span class="ic-ico"><i class="bi bi-file-earmark-text" aria-hidden="true"></i></span><h3>Whitepapers</h3><p>Evidence-backed publications and policy briefs you can cite.</p><span class="read-link">Read more <i class="bi bi-arrow-right"></i></span></a></div>
+</div></section>
+<!-- /SP:HOME-B -->
 
 <!-- ============ G. AUTHOR SPOTLIGHT ============ -->
 <section class="section authors" id="authors">
@@ -444,16 +444,16 @@
           <div><strong data-count="7">0</strong><span>Case studies</span></div>
         </div>
         <div class="author-actions">
-          <a href="#" class="btn-pill">All stories by the author <i class="bi bi-arrow-right"></i></a>
-          <a href="#" class="btn-outline-ink">Founder’s message</a>
+          <a href="about.html" class="btn-pill">All stories by the author <i class="bi bi-arrow-right"></i></a>
+          <a href="about.html#founder" class="btn-outline-ink">Founder’s message</a>
         </div>
       </div>
       <div class="author-recent">
         <span class="eyebrow">Recent writing</span>
-        <a href="#"><span class="cat" style="--c:var(--c-gia)">Case Study</span>COVID Jagratha: Connecting the Response</a>
-        <a href="#"><span class="cat" style="--c:var(--c-found)">Explainer</span>Citizen-Centric Governance</a>
-        <a href="#"><span class="cat" style="--c:var(--c-know)">Essay</span>We Experience Governance Every Day</a>
-        <a href="#"><span class="cat" style="--c:var(--c-tools)">Playbook</span>The Mission-Mode Playbook</a>
+        <a href="case-study-covid-jagrata.html"><span class="cat" style="--c:var(--c-gia)">Case Study</span>COVID Jagratha: Connecting the Response</a>
+        <a href="foundations.html#citizen-centric-governance"><span class="cat" style="--c:var(--c-found)">Explainer</span>Citizen-Centric Governance</a>
+        <a href="about.html"><span class="cat" style="--c:var(--c-know)">Essay</span>We Experience Governance Every Day</a>
+        <a href="tools.html#planning"><span class="cat" style="--c:var(--c-tools)">Playbook</span>The Mission-Mode Playbook</a>
       </div>
     </div>
 
@@ -474,7 +474,7 @@
         <strong>Citizens &amp; innovators</strong>
         <span>Tell us about an idea or a person that made a difference.</span>
       </div>
-      <a href="#" class="contrib-cta reveal">
+      <a href="mailto:surajyapatham@gmail.com" class="contrib-cta reveal">
         <span class="eyebrow eyebrow-light">Contributors</span>
         <strong>Write for Surajyapatham</strong>
         <span>We are building a community of voices. Pitch a story <i class="bi bi-arrow-right"></i></span>
@@ -483,45 +483,39 @@
   </div>
 </section>
 
+<!-- SP:HOME-C -->
+<section class="hx-closing"><div class="container-xl">
+  <blockquote class="hx-quote">“Governance is not a transaction. It is a relationship between the state and the citizen — and like every relationship, it depends on trust, attention, and the willingness to listen.”<cite>— Founder&#x27;s note</cite></blockquote>
+  <div class="partner-box hx-join"><div><span class="sec-label sec-label-light">Join the movement</span><h2>Strengthen governance from both sides.</h2><p>Whether you are a citizen with a question, an officer with a model to share, or a researcher with a perspective — there is a place for you here.</p></div><a class="btn-pill btn-pill-light" href="mailto:surajyapatham@gmail.com">Get in touch <i class="bi bi-arrow-right"></i></a></div>
+</div></section>
+<!-- /SP:HOME-C -->
+
 </main>
 
-<!-- ============ FOOTER ============ -->
+<!-- SP:FOOTER -->
 <footer class="site-footer">
   <div class="container-xl">
     <p class="footer-statement">Better governance is built when citizens know, institutions listen, public resources are used wisely and good ideas are shared.</p>
     <div class="row g-4 footer-cols">
       <div class="col-lg-4">
-        <img src="assets/img/logo.png" alt="Surajyapatham" class="footer-logo">
-        <p class="footer-mission">To advance rights-aware citizenship and ethical, empathetic, accountable and outcome-oriented governance that creates greater public value.</p>
+        <a href="index.html"><img src="assets/img/logo.png" alt="Surajyapatham" class="footer-logo"></a>
+        <p class="footer-mission">A platform to sensitize and inspire citizens, public servants, and governance innovators — bridging the demand and supply sides of good governance.</p>
+        <a class="footer-mail" href="mailto:surajyapatham@gmail.com"><i class="bi bi-envelope"></i> surajyapatham@gmail.com</a>
       </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <h4>Read</h4>
-        <a href="#">Foundations</a><a href="#">Governance in Action</a><a href="#">Citizen Hub</a>
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <h4>Use</h4>
-        <a href="#">Tools &amp; Playbooks</a><a href="#">Knowledge</a><a href="#">Learning</a>
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <h4>About</h4>
-        <a href="#">About Surajyapatham</a><a href="#">Founder’s Message</a><a href="#">Editorial Standards</a>
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <h4>Connect</h4>
-        <a href="#">Share an Idea</a><a href="#">Collaborate</a><a href="#">Contact</a>
-      </div>
+      <div class="col-6 col-md-4 col-lg-2"><h4>Explore</h4><a href="about.html">About Surajyapatham</a><a href="foundations.html">Foundations of Good Governance</a><a href="dilemmas.html">Dilemmas of a Public Servant</a><a href="case-studies.html">Governance in Action</a></div><div class="col-6 col-md-4 col-lg-2"><h4>For Citizens</h4><a href="citizen-hub.html#rights">Know Your Rights</a><a href="citizen-hub.html#standards">Service Delivery Standards</a><a href="citizen-hub.html#participate">Participate Locally</a><a href="citizen-hub.html#redressal">Raise a Grievance</a></div><div class="col-6 col-md-4 col-lg-2"><h4>For Officers</h4><a href="tools.html">Tools &amp; Templates</a><a href="knowledge.html">Knowledge Centre</a><a href="learning.html">Learning Hub</a><a href="contact.html">Request a Toolkit</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><h4>Connect</h4><a href="contact.html">Contact &amp; Feedback</a><a href="mailto:surajyapatham@gmail.com">Get in touch</a><a href="about.html#partner">Partner with us</a><a href="dilemmas.html">Dilemmas</a></div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Surajyapatham. All rights reserved.</span>
-      <span>Prototype · Homepage v0.1 · Placeholder imagery via Unsplash</span>
+      <span>© <span id="year">2026</span> Surajyapatham. Surajyapatham — A platform for citizen-centric governance.</span>
+      <span><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="case-studies.html">Case Studies</a> · <a href="contact.html">Contact</a></span>
     </div>
   </div>
 </footer>
-
 <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/search-index.js?v=6"></script>
+<script src="assets/js/main.js?v=6"></script>
+<!-- /SP:FOOTER -->
 </body>
 </html>
