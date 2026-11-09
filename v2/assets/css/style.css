@@ -1115,3 +1115,15 @@ em { font-style: italic; }
 [data-bs-theme="dark"] .logo-d { display: inline-block !important; }
 .footer-logo { display: inline-block !important; opacity: 1; }
 .footer-logo { height: 56px !important; width: auto; }
+
+/* Photo credits page */
+.credits-wrap { padding: 1.5rem 0 4rem; }
+.credits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; }
+@media (max-width: 767.98px) { .credits { grid-template-columns: 1fr; } }
+.credit { display: grid; grid-template-columns: 140px 1fr; gap: 1rem; align-items: center; padding: .8rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+.credit img { width: 140px; height: 94px; object-fit: cover; border-radius: 8px; background: var(--paper-2); }
+.credit strong { display: block; font-size: .95rem; line-height: 1.35; }
+.credit span { display: block; font-size: .8rem; color: var(--muted); margin: .25rem 0; }
+.credit span a { color: var(--ink-2); text-decoration: underline; }
+.credit > div > a { font-size: .8rem; font-weight: 600; color: var(--accent); }
+.credits-note { margin-top: 1.5rem; color: var(--muted); font-size: .9rem; }
